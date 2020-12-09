@@ -1,0 +1,123 @@
+#nav_container{
+	background-color:#F5F5F7;
+}
+
+#main_navigation_container{
+	width:100%;
+	margin:auto;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	height:80px;
+	background-color:transparent;
+}
+
+#logo_container{
+	width:20%;
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	color:#333333;
+	cursor: url(hand.cur), pointer;
+	transition: .5s ease;
+}
+
+#logo_container:hover{
+	color:#333333;
+}
+
+#logo{
+	width:70px;
+	heigth:70px;
+}
+
+#logo_span{
+	font-size:20px;
+	font-weight:500;
+	color:inherit;
+	margin-left:5px;
+}
+
+
+#button_div{
+	width:70%;
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-end;
+	flex-wrap:nowrap;
+}
+
+.nav_button{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+	max-width:200px;
+}
+
+#brand_div{
+	min-width:30px;
+	min-height:30px;
+	margin:0;
+}
+
+#logo{
+	min-width:30px;
+	min-heigth:30px;
+}
+
+#button_container{
+	width:20%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+	
+.nav_button{
+	padding:0;
+}	
+	
+.button_div{
+	display:flex;
+	justify-content:center;
+	width:80%;
+}
+
+.fa{
+	color:black;
+}
+
+.custom_nav{
+	color:#E9C46A;
+}
+
+.nav_button{
+	transition: box-shadow 0.5s ease-in-out;
+}
+
+
+#testing:hover{
+	width:100px;
+}
+
+.navigation_span{
+	font-size:1.3rem;
+	font-weight:600;
+	color:#D6D6D6;
+	transition: .5s ease;
+}
+
+.navigation_span:hover{
+	color:#333333;
+}
+
+
+.nav_text:hover{
+	color:#F5F5F7;
+	text-shadow: 0px 0px 1px #F5F5F7;
+}
+
+
+
