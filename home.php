@@ -24,17 +24,29 @@
 <div id="big_container">
 	<div id="elements_container">
 		<div class="element">
-			<img class="overlap_menu_image_series" src="./_img/room_1.png" alt="Produse_img">
-			<span class="element_span"><h3>Lorem ipsum</h3></span>
+			<!--<a class="clickable_element" href="./products.php" >
+				<div class="overlap_element">
+					<img class="overlap_menu_image" src="./_img/room_1.png" alt="Produse_img">
+					<img class="overlay" src="./_img/room_1_2.png" alt="Produse_img">
+				</div>
+			</a>-->
+			<div class="image_container">
+				<img class="overlap_menu_image_series" src="./_img/room_1.png" alt="Produse_img">
+			</div>
+			<span class="element_span"><h3>Instalatii sanitare</h3></span>
 			<span class="element_span">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
 		</div>
 		<div class="element">
-			<img class="overlap_menu_image_series" src="./_img/room_2.png" alt="Produse_img">
-			<span class="element_span"><h3>Lorem ipsum</h3></span>
+			<div class="image_container">
+				<img class="overlap_menu_image_series" src="./_img/room_2.png" alt="Produse_img">
+			</div>
+			<span class="element_span"><h3>Renovari bai.</h3></span>
 			<span class="element_span">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
 		</div>
-		<div class="element">
-			<img class="overlap_menu_image_series" src="./_img/room_3.png" alt="Produse_img">
+		<div>
+			<div class="image_container">
+				<img class="overlap_menu_image_series" src="./_img/room_3.png" alt="Produse_img">
+			</div>	
 			<span class="element_span"><h3>Lorem ipsum</h3></span>
 			<span class="element_span">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
 		</div>
