@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="hometest.css">
 </head>
 <html lang="ro">
 <!--<?php include_once("navigation.html")?>-->
@@ -28,8 +28,11 @@
 	<a class="btn btn-outline-info btn-lg" href="#" role="button">Learn more</a>
   </p>
 </div>
-<div id="big_container">
-	<div id="elements_container">
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      	<div id="elements_container">
 		<div class="element">
 			<a class="navigation_element" href="#">
 				<div class="image_container">
@@ -57,19 +60,50 @@
 				<span class="element_span">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
 			</a>
 		</div>
+		</div>
+	</div>	
+    <div class="carousel-item">
+         <div class="carousel-item active">
+      	<div id="elements_container">
 		<div class="element">
 			<a class="navigation_element" href="#">
 				<div class="image_container">
-					<img class="overlap_menu_image_series" src="./_img/room_4.png" alt="Produse_img">
+					<img class="overlap_menu_image_series" src="./_img/room_1.png" alt="Produse_img">
 				</div>
-				<span class="element_span"><h1>Renovari interioare.</h1></span>
+				<h1>Instalatii sanitare</h1>
 				<span class="element_span">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
 			</a>
 		</div>
-	</div>
+		<div class="element">
+			<a class="navigation_element" href="#">
+				<div class="image_container">
+					<img class="overlap_menu_image_series" src="./_img/room_2.png" alt="Produse_img">
+				</div>
+				<h1>Renovari bai.</h1>
+				<span class="element_span">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+			</a>
+		</div>
+		<div class="element">
+			<a class="navigation_element" href="./page1test.php">
+				<div class="image_container">
+					<img class="overlap_menu_image_series" src="./_img/room_3.png" alt="Produse_img">
+				</div>
+				<h1>Renovari interioare.</h1>
+				<span class="element_span">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+			</a>
+		</div>
+		</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
-</html>
 
-<script>
-ipt>
+</html>
