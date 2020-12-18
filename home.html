@@ -7,7 +7,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="colors.css">
 </head>
 <html lang="ro">
 <!--<?php include_once("navigation.html")?>-->
@@ -15,34 +17,38 @@
 
 </body>
 <div class="jumbotron">
-  <div style="display:flex; flex-direction:row; align-items:center">
+  <div id="jumbotron_logo_container">
 	<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
-	<h1 class="display-4" id="jumbotron_header">Lorem Ipsum</h1>
+	<h1 class="display-4" id="jumbotron_header">Slabu Dorin</h1>
   </div>
-  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  <hr class="my-4">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p class="lead">Slabu Dorin, Persoana Fizica Autorizata</p>
+  <hr class="my-4 jumbotron_hr">
+  <p class="second_lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   <p class="lead">
-    <a class="btn btn-outline-info btn-lg" href="#" role="button">Learn more</a>
-	<a class="btn btn-outline-info btn-lg" href="#" role="button">Learn more</a>
-	<a class="btn btn-outline-info btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-outline-info btn-lg btn_custom" href="#" role="button">Contact</a>
+	<a class="btn btn-outline-info btn-lg btn_custom" href="#" role="button">Galerie</a>
+	<a class="btn btn-outline-info btn-lg btn_custom" href="./home.html#content" role="button" id="see_more">Vezi mai multe</a>
   </p>
 </div>
 
-<div class="card_container">
-	<div class="element">
-		<div class="element-body" style="background-color:#457b9d">	
-			<h1 class="card-title" style="color:#f1faee;">Renovari interioare.</h4>
+<div class="card_container" id="content">
+	<div class="element" style="background-color:#457b9d">
+		<div class="element-body" >	
+			<h1 class="element-title" style="color:#f1faee;">Renovari interioare.</h4>
 				<div class="image_container">
 					<img class="overlap_menu_image_series" src="./_img/room_3.png" alt="Produse_img">
 				</div>
 			</div>
-			<li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-			<li class="list-group-item"><a href="#">Mai multe detalii.</a></li>
+			<ul id="element_list">
+			  <li class="element_list_element"><i class="fa fa-check"></i>Morbi leo risus</li>
+			  <li class="element_list_element"><i class="fa fa-check"></i>Porta ac consectetur ac</li>
+			  <li class="element_list_element"><i class="fa fa-check"></i>Vestibulum at eros ac consectetur</li>
+			</ul>
+			<li class="list-group-item"><a href="./renovari_interioare.php">Mai multe detalii.</a></li>
 	</div>	
 	<div class="element">
-		<div class="element-body" style="background-color:#e5e5e5">	
-			<h1 class="card-title" style="color:#333333">Instalatii sanitare.</h1>
+		<div class="element-body" style="background-color:#1D3557">	
+			<h1 class="element-title" style="color:#333333">Instalatii sanitare.</h1>
 				<div class="image_container">
 					<img class="overlap_menu_image_series" src="./_img/room_1.png" alt="Produse_img">
 				</div>
@@ -52,14 +58,22 @@
 	</div>
 	<div class="element">
 		<div class="element-body" style="background-color:#fca311">	
-			<h1 class="card-title" style="color:#14213d">Renovari bai.</h4>
+			<h1 class="element-title" style="color:#14213d">Renovari bai.</h4>
 				<div class="image_container">
 					<img class="overlap_menu_image_series" src="./_img/room_2.png" alt="Produse_img">
 				</div>
-				
 			</div>
 			<li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 			<li class="list-group-item">Mai multe detalii.</li>
+	</div>
+	<div class="element">
+		<div class="element-body">	
+			<h1 class="element-title" style="color:#14213d">Vezi in functie de categorie.</h4>
+			<li class="list-group-item"><a href="">Podele</a></li>
+			<li class="list-group-item"><a href="">Podele</a></li>
+			<li class="list-group-item"><a href="">Podele</a></li>
+			<li class="list-group-item"><a href="">Podele</a></li>
+			<li class="list-group-item"><a href="">Podele</a></li>
 	</div>
 </div>
 
@@ -72,19 +86,19 @@
 <div class="card-group">
   <div class="card">
     <div class="card-body">
-      <h4 class="card-title">Card title</h4>
+      <h4 class="element-title">Card title</h4>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     </div>
   </div>
   <div class="card">
     <div class="card-body">
-      <h4 class="card-title">Card title</h4>
+      <h4 class="element-title">Card title</h4>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
     </div>
   </div>
   <div class="card">
     <div class="card-body">
-      <h4 class="card-title">Card title</h4>
+      <h4 class="element-title">Card title</h4>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
     </div>
   </div>
