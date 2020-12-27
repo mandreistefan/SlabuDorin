@@ -19,7 +19,7 @@
 <div class="jumbotron">
   <div id="jumbotron_logo_container">
 	<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
-	<h1 class="display-4" id="jumbotron_header">Slabu Dorin</h1>
+	<h1 class="display-4" id="jumbotron_header">Dorin Slabu</h1>
   </div>
   <p class="lead">Slabu Dorin, Persoana Fizica Autorizata</p>
   <hr class="my-4 jumbotron_hr">
@@ -31,75 +31,126 @@
   </p>
 </div>
 
-<div class="card_container" id="content">
-	<div class="element" style="background-color:#457b9d">
-		<div class="element-body" >	
-			<h1 class="element-title" style="color:#f1faee;">Renovari interioare.</h4>
-				<div class="image_container">
-					<img class="overlap_menu_image_series" src="./_img/room_3.png" alt="Produse_img">
+	<div class="main_content" style="background-color:#f8f8ff;color:#333333">
+		<div class="element" id="grafic_element">
+				<div class="image_container" style="position:relative">
+					<img class="image_big" src="./_img/that_big_thing.png" alt="Produse_img">
+					<div class="indicator" id="wall_ind">1</div>
+					<div class="indicator" id="floor_ind">2</div>
+					<div class="indicator" id="lights_ind">3</div>
+					<div class="indicator" id="heat_ind">4</div>
+					<div class="indicator" id="floorheat_ind">5</div>
+					<div class="indicator" id="sanit_ind">6</div>
+					<div class="indicator" id="tiles_ind">7</div>
 				</div>
-			</div>
-			<ul id="element_list">
-			  <li class="element_list_element"><i class="fa fa-check"></i>Morbi leo risus</li>
-			  <li class="element_list_element"><i class="fa fa-check"></i>Porta ac consectetur ac</li>
-			  <li class="element_list_element"><i class="fa fa-check"></i>Vestibulum at eros ac consectetur</li>
-			</ul>
-			<li class="list-group-item"><a href="./renovari_interioare.php">Mai multe detalii.</a></li>
-	</div>	
-	<div class="element">
-		<div class="element-body" style="background-color:#1D3557">	
-			<h1 class="element-title" style="color:#333333">Instalatii sanitare.</h1>
-				<div class="image_container">
-					<img class="overlap_menu_image_series" src="./_img/room_1.png" alt="Produse_img">
-				</div>
-			</div>
-			<li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-			<li class="list-group-item">Mai multe detalii.</li>
+		</div>
+		<div class="element" style="padding-left:1rem;padding-right:1rem" id="list_element">
+			<ul class="ul_big" style="display:flex;flex-direction:row;">
+				<ul class="ul_small"> 
+					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+						<div class="indicator_inactive" id="wall_ind_inactive" style="position:relative">1</div> 
+						<h5 class="h-center">Varuire si vopsire.</h5>
+					</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i> Gleturie, varuire si vopsire</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i> Tapetare</li>
+				</ul>
+				<ul class="ul_small">
+					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+						<div class="indicator_inactive"  id="floor_ind_inactive" style="position:relative">2</div>
+						<h5 class="h-center">Podele.</h5>
+					</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i> Montaj parchet si plinta</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i> Montaj mocheta</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i> Montaj linoleum</li>
+				</ul>
+				<ul class="ul_small">
+					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+						<div class="indicator_inactive" id="lights_ind_inactive" style="position:relative">3</div>
+						<h5 class="h-center">Instalatii electrice.</h5>
+					</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i> Instalatii electrice.</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i> Montaj corpuri de iluminat si intrerupatoare(clasic, cap-scara, cruce).</li>
+				</ul>
+				<ul class="ul_small">
+					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+						<div class="indicator_inactive" id="heat_ind_inactive" style="position:relative">4</div>
+						<h5 class="h-center">Instalatii termice.</h5>
+					</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea centralei termice.</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea caloriferelor.</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea instalatiilor de cupru.</li>
+				</ul>
+				<ul class="ul_small">
+					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+						<div class="indicator_inactive" id="floorheat_ind_inactive" style="position:relative">5</div>
+						<h5>Incalzire prin pardoseala.</h5>
+					</li>
+				</ul>
+				<ul class="ul_small">
+					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+						<div class="indicator_inactive" id="sanit_ind_inactive" style="position:relative">6</div>
+						<h5 class="h-center">Instalatii sanitare.</h5>
+					</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea corpurilor sanitare(chiuveta, WC, bideu, etc.).</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea dusului(cu cabina de dus sau fara cabina de dus).</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea scurgerilor PVC.</li>
+				</ul>
+				<ul class="ul_small">
+					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+						<div class="indicator_inactive" id="tiles_ind_inactive" style="position:relative">7</div>
+						<h5 class="h-center">Gresie si faianta.</h5>
+					</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea gresiei</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea faiantei</li>
+				</ul>
+				<ul class="ul_small">
+					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+						<div class="indicator_inactive" id="sanit_ind_inactive" style="position:relative">8</div>
+						<h5 class="h-center">Exterioare.</h5>
+					</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea corpurilor sanitare(chiuveta, WC, bideu, etc.).</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea dusului(cu cabina de dus sau fara cabina de dus).</li>
+					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea scurgerilor PVC.</li>
+				</ul>
+			</ul>			
+		</div>
 	</div>
-	<div class="element">
-		<div class="element-body" style="background-color:#fca311">	
-			<h1 class="element-title" style="color:#14213d">Renovari bai.</h4>
-				<div class="image_container">
-					<img class="overlap_menu_image_series" src="./_img/room_2.png" alt="Produse_img">
-				</div>
-			</div>
-			<li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-			<li class="list-group-item">Mai multe detalii.</li>
-	</div>
-	<div class="element">
-		<div class="element-body">	
-			<h1 class="element-title" style="color:#14213d">Vezi in functie de categorie.</h4>
-			<li class="list-group-item"><a href="">Podele</a></li>
-			<li class="list-group-item"><a href="">Podele</a></li>
-			<li class="list-group-item"><a href="">Podele</a></li>
-			<li class="list-group-item"><a href="">Podele</a></li>
-			<li class="list-group-item"><a href="">Podele</a></li>
-	</div>
+
+<div style="width:100%;background-color:#1D3557;color:white;display:flex;align-items:center;text-align:center;padding-top:50px;padding-bottom:50px">
+	<table style="width:100%" class="h-center">
+	  <tr>
+		<th style="width:30%;">
+			<img src="./_img/exp_icon.png" alt="Produse_img"><br>
+			<span style="font-size:2rem;font-weight:600;color:#F1FAEE">20 de ani de experienta</span>.</th>
+		<th style="width:30%">
+			<img src="./_img/lightbulb_icon.png" alt="Produse_img"><br>	
+			<span style="font-size:2rem;font-weight:600;color:#F1FAEE">Atestat instalatii electrice.</span></th>
+		<th style="width:30%"><h3>Un nou header.</h3></th>
+	  </tr>
+	  <tr>
+		<td style="width:30%;padding-left:20px;padding-right:20px"><span style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span></td>
+		<td style="width:30%;padding-left:20px;padding-right:20px"><span style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span></td>
+		<td style="width:30%;padding-left:20px;padding-right:20px"><span style="color:#b3b3b3">Noi informatii trecute aici ca si filler. De preferat mai multe pentru umplut spatiul. fwef wfwef</span></td>
+	  </tr>
+	</table>
 </div>
 
+<div class="footer" style="background-color:#333333;display:flex;flex-direction:column;justify-content:center;padding-left:20px;padding-right:20px;padding-top:20px">
+<h5 style="color:white">Contact</h5>
+	<div class="footer_contact">
+		<span style="font-weight:600;color:White"><li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-phone"></i> Telefon<br>077773453</li>
+		<li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-whatsapp"></i> WhatsApp<br>077773453</li>
+		<li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-envelope-o"></i> Email</span><br>mail@gmail.com</li></span>
+	</div>
+</div>	
 
 </html>
 
+<script>
+$(".indicator" ).click(function() {
+   var id = $(this).attr('id');
+   $('div[class~="indicator_inactive"]').css({'box-shadow':'0 0 0 0px rgba(230,57,70, 0.9)'})
+   $("#"+id+"_inactive").css({'box-shadow':'0 0 0 4px rgba(230,57,70, 0.9)'});
+});
+</script>
 
-
-
-<div class="card-group">
-  <div class="card">
-    <div class="card-body">
-      <h4 class="element-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h4 class="element-title">Card title</h4>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h4 class="element-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-  </div>
-</div>
