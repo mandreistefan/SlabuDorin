@@ -47,7 +47,8 @@ html{
 }
 
 #grafic_element{
-	width:50%
+	padding-top:100px;
+	padding-bottom:100px;
 }
 
 #list_element{
@@ -56,7 +57,7 @@ html{
 
 .image_container{
 	width:100%;
-	max-width:600px;
+	max-width:700px;
 	height:100%;
 	display:flex;
 	justify-content:center;
@@ -144,48 +145,87 @@ html{
   }
 }
 
-#floor_ind{
-	bottom:calc(45%);
-	right:calc(50% - 15px);
-}
-
-#wall_ind{
-	top:calc(25%);
-	left:calc(37.5%);
-}
-
-#lights_ind{
-	top:calc(25%);
-	right:calc(37.5%);
-}
-
 #heat_ind{
-	bottom:calc(30%);
+	bottom:calc(50%);
 	left:calc(12.5%);
 }
 
-#floorheat_ind{
-	bottom:calc(12.5%);
-	left:calc(25%);
+#floor_ind{
+	bottom:calc(10%);
+	left:calc(25% - 15px);
 }
 
-#ctrla_ind{
-	bottom:calc(30%);
-	left:calc(37.5%);
+#wall_ind{
+	bottom:calc(75% - 15px);
+	left:calc(37.5% - 15px);
+}
+
+#lights_ind{
+	bottom:calc(50%);
+	right:calc(37.5%);
 }
 
 #sanit_ind{
-	bottom:calc(30%);
-	right:calc(25%);
+	bottom:calc(50%);
+	right:calc(12.5%);
 }
 
 #tiles_ind{
 	bottom:calc(12.5%);
-	right:calc(25%);
+	right:calc(25% - 15px);
 }
 
-#ext_ind{
-	bottom:calc(5%);
+.list_ind{
+	background-color:white;
+	position:absolute;
+	border-radius:5px;
+	opacity:0.8;
+	width:220px;
+	height:120px;
+	display:flex;
+	flex-direction:column;
+	padding:10px;
+}
+
+.list_ind:hover{
+	opacity:1;
+	cursor: pointer;
+}
+
+#heat_ind_list{
+	bottom:calc(50% - 80px);
+	left:-200px;
+	height:150px;
+}
+
+#floor_ind_list{
+	bottom:-50px;
+	left:calc(-12.5%);
+}
+
+#wall_ind_list{
+	top:0px;
+	width:250px;
+	height:80px;
+}
+
+#sanit_ind_list{
+	bottom:calc(50% - 100px);
+	right:-240px;
+	height:auto;
+	width:250px;
+}
+
+#lights_ind_list{
+	right:calc(37.5% - 110px);
+	bottom:calc(50% - 50px);
+	height:auto;
+}
+
+#tiles_ind_list{
+	bottom:-50px;
+	right:calc(25% - 100px);
+	height:auto;
 }
 
 
@@ -212,8 +252,7 @@ html{
 
 .ul_small{
 	padding-left:0;
-	width:210px;
-
+	width:33.3%;
 	margin-bottom:10px;
 	height:auto;
 }

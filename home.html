@@ -21,9 +21,9 @@
 	<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
 	<h1 class="display-4" id="jumbotron_header">Dorin Slabu</h1>
   </div>
-  <p class="lead">Slabu Dorin, Persoana Fizica Autorizata</p>
-  <hr class="my-4 jumbotron_hr">
-  <p class="second_lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p class="lead mb-2">Slabu Dorin, Persoana Fizica Autorizata</p>
+  <hr class="my-1 jumbotron_hr">
+  <p class="second_lead">Servicii complete de la lorem ipsum.</p>
   <p class="lead">
     <a class="btn btn-outline-info btn-lg btn_custom" href="#" role="button">Contact</a>
 	<a class="btn btn-outline-info btn-lg btn_custom" href="#" role="button">Galerie</a>
@@ -42,9 +42,10 @@
 					<div class="indicator" id="floorheat_ind">5</div>
 					<div class="indicator" id="sanit_ind">6</div>
 					<div class="indicator" id="tiles_ind">7</div>
+					<div class="indicator" id="ext_ind">8</div>
 				</div>
 		</div>
-		<div class="element" style="padding-left:1rem;padding-right:1rem" id="list_element">
+		<div class="element" style="padding-left:1rem;padding-right:1rem;" id="list_element">
 			<ul class="ul_big" style="display:flex;flex-direction:row;">
 				<ul class="ul_small"> 
 					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
@@ -79,8 +80,6 @@
 					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea centralei termice.</li>
 					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea caloriferelor.</li>
 					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea instalatiilor de cupru.</li>
-				</ul>
-				<ul class="ul_small">
 					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
 						<div class="indicator_inactive" id="floorheat_ind_inactive" style="position:relative">5</div>
 						<h5>Incalzire prin pardoseala.</h5>
@@ -116,23 +115,43 @@
 		</div>
 	</div>
 
-<div style="width:100%;background-color:#1D3557;color:white;display:flex;align-items:center;text-align:center;padding-top:50px;padding-bottom:50px">
-	<table style="width:100%" class="h-center">
-	  <tr>
-		<th style="width:30%;">
-			<img src="./_img/exp_icon.png" alt="Produse_img"><br>
-			<span style="font-size:2rem;font-weight:600;color:#F1FAEE">20 de ani de experienta</span>.</th>
-		<th style="width:30%">
-			<img src="./_img/lightbulb_icon.png" alt="Produse_img"><br>	
-			<span style="font-size:2rem;font-weight:600;color:#F1FAEE">Atestat instalatii electrice.</span></th>
-		<th style="width:30%"><h3>Un nou header.</h3></th>
-	  </tr>
-	  <tr>
-		<td style="width:30%;padding-left:20px;padding-right:20px"><span style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span></td>
-		<td style="width:30%;padding-left:20px;padding-right:20px"><span style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span></td>
-		<td style="width:30%;padding-left:20px;padding-right:20px"><span style="color:#b3b3b3">Noi informatii trecute aici ca si filler. De preferat mai multe pentru umplut spatiul. fwef wfwef</span></td>
-	  </tr>
-	</table>
+<div id="strip">
+		<div class="strip_element">
+			<img class="strip_image" src="./_img/exp_icon.png" alt="Produse_img"><br>
+			<span class="strip_span">20 de ani de experienta</span>
+			<span class="strip_span_small" style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span>
+		</div>
+		<div class="strip_element">
+			<img class="strip_image" src="./_img/lightbulb_icon.png" alt="Produse_img"><br>	
+			<span class="strip_span">Atestat instalatii electrice</span>
+			<span class="strip_span_small" style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span>
+		</div>
+		<div class="strip_element">
+			<img class="strip_image" src="./_img/lightbulb_icon.png" alt="Produse_img"><br>	
+			<span class="strip_span">Atestat instalatii electrice</span>
+			<span class="strip_span_small" style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span>
+		</div>
+</div>
+<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="3000">
+        <img src="./_img/test1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-interval="3000">
+      <img src="./_img/test1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-interval="3000">
+      <img src="./_img/test1.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
 <div class="footer" style="background-color:#333333;display:flex;flex-direction:column;justify-content:center;padding-left:20px;padding-right:20px;padding-top:20px">
