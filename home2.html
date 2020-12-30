@@ -21,19 +21,23 @@
 	<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
 	<h1 class="display-4" id="jumbotron_header">Dorin Slabu</h1>
   </div>
-  <div style="display:flex;justify-content:space-between">
-	<p class="lead mb-2">Slabu Dorin<br>Persoana Fizica Autorizata</p>
-	<p class="lead">
-		<a class="btn btn-outline-info btn-lg btn_custom" href="#" role="button">Contact</a>
-		<a class="btn btn-outline-info btn-lg btn_custom" href="#" role="button">Galerie</a>
-		<a class="btn btn-outline-info btn-lg btn_custom" href="./home.html#content" role="button" id="see_more">Vezi mai multe</a>
-	</p>
+  <div id="jumbotron_additional_info">
+		<p class="lead mb-2">Slabu Dorin,<br>Persoana Fizica Autorizata<br>Renovari interioare - exterioare.</p>
+		<ul id="jumbotron_contact">
+			<h4 class="lead" id="jumbotron_contact_head">Contact</h4>
+			<li class="jumbotron_contact_list_element"><i class="fa fa-phone"></i> Telefon/ <i class="fa fa-whatsapp"></i> WhatsApp: <span style="font-weight:400">077773453</span></li><br>
+			<li class="jumbotron_contact_list_element"><i class="fa fa-envelope-o"></i> Email:</span> <span style="font-weight:400">slabudorinpfa@gmail.com</span></li>
+		</ul>
   </div>	
   <hr class="my-1 jumbotron_hr">
   <p class="second_lead">Servicii complete de la lorem ipsum.</p>
+  	<p class="lead">
+	  <a class="btn btn-outline-info btn-lg btn_custom" href="#" role="button">Galerie</a>
+	  <a class="btn btn-outline-info btn-lg btn_custom" href="./home2.html#content" role="button" id="see_more">Vezi mai multe<i class="fa fa-chevron-down"></i></a>
+	</p>
 </div>
 
-	<div class="main_content" style="background-color:#f8f8ff;color:#333333">
+	<div class="main_content" style="background-color:#f8f8ff;color:#333333" id="content">
 		<div class="element" id="grafic_element" style="width:100%;position:relative">
 				<div class="image_container" style="position:relative">
 					<img class="image_big" src="./_img/that_big_thing2.png" alt="Produse_img">
@@ -74,12 +78,11 @@
 						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea faiantei</li>
 					</div>
 				</div>
-
 		</div>
 	</div>
-		<div class="element" id="services">
+	<div class="element" id="services">
 			<div id="services_head">
-				<span id="services_head_header">Serviciile mele</span>
+				<span id="services_head_header">Serviciile<br>mele</span>
 			</div>			
 			<div id="services_list">
 				<ul class="ul_big">
@@ -110,7 +113,6 @@
 						<li class="list-custom-item"><i class="fa fa-check"></i> Gleturie, varuire si vopsire</li>
 						<li class="list-custom-item"><i class="fa fa-check"></i> Tapetare</li>
 					</ul>
-
 					<ul class="ul_small">
 						<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
 							<div class="indicator_inactive" id="lights_ind_inactive" style="position:relative">4</div>
@@ -148,7 +150,7 @@
 					<ul class="ul_small">
 						<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
 							<div class="indicator_inactive" id="sanit_ind_inactive" style="position:relative">?</div>
-							<h5 class="h-center">Cauti ceva ce nu e in lista? <a href="">Contacteaza-ma.</h5>
+							<h5 class="h-center">Cauti ceva ce nu e in lista?<br><a style="color:#333333" href="">Contacteaza-ma.</a></h5>
 						</li>
 					</ul>
 				</ul>			
@@ -176,9 +178,11 @@
 <div class="footer" style="background-color:#333333;display:flex;flex-direction:column;justify-content:center;padding-left:20px;padding-right:20px;padding-top:20px">
 <h5 style="color:white">Contact</h5>
 	<div class="footer_contact">
-		<span style="font-weight:600;color:White"><li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-phone"></i> Telefon<br>077773453</li>
-		<li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-whatsapp"></i> WhatsApp<br>077773453</li>
-		<li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-envelope-o"></i> Email</span><br>mail@gmail.com</li></span>
+		<span style="font-weight:600;color:White">
+			<li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-phone"></i> Telefon<br>077773453</li>
+			<li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-whatsapp"></i> WhatsApp<br>077773453</li>
+			<li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-envelope-o"></i> Email</span><br>mail@gmail.com</li>
+		</span>
 	</div>
 </div>	
 
@@ -191,7 +195,7 @@ $(".indicator" ).click(function() {
    $('div[class~="indicator_inactive"]').css({'color':'#333333'});
    $("#"+id+"_inactive").css({'background-color':'#333333'});
    $("#"+id+"_inactive").css({'color':'#f5df4d'});
-   window.location.href = "./home2.html#services";
+   window.location.href = "./home2.html"+"#"+id+"_inactive";
 });
 </script>
 

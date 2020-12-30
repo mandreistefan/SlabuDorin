@@ -24,6 +24,25 @@ html{
 	color:#E63946;
 }
 
+#jumbotron_additional_info{
+	display:flex;
+	justify-content:space-between;
+}
+
+#jumbotron_contact{
+	text-decoration:none;
+	font-weight:600;
+	color:#333333;
+	width:auto;
+	float:right
+}
+
+.jumbotron_contact_list_element{
+	list-style-type:none;
+	margin-left:10px;
+	float:left;
+}
+
 #see_more{
 	font-weight:600;
 }
@@ -205,6 +224,7 @@ html{
 
 #wall_ind_list{
 	top:0px;
+	left:calc(37.5% - 15px);
 	width:250px;
 	height:80px;
 }
@@ -263,7 +283,7 @@ html{
 	padding-right:1rem;
 	display:flex;
 	flex-direction:row;
-	background-color:#f5df4dff
+	background-color:#f5df4d;
 }
 
 #services_head,#services_list{
@@ -271,7 +291,7 @@ html{
 }
 
 #services_head_header{
-	font-size:10rem;
+	font-size:9rem;
 	display:block
 }
 
@@ -307,7 +327,6 @@ html{
 }
 
 @media screen and (max-width: 576px){
-	
 	.jumbotron{
 		height:100vh;
 	}
@@ -318,14 +337,35 @@ html{
 		align-items:center;
 	}
 	
+	#jumbotron_additional_info{
+		display:flex;
+		flex-direction:column;
+	}
+	
+	#jumbotron_contact{
+		padding:0;
+	}
+	
+	#jumbotron_contact_head{
+		display:none;
+	}
+	
+	.jumbotron_contact_list_element{
+		margin-left:0;
+		text-align:center;
+		display:block;
+		width:100%;
+	}
+	
 	.btn_custom{
-		width:40%;
+		width:80%;
 		margin-bottom:1rem;
 		border-top:0;
 		border-left:0;
 		border-right:0;
 		border-radius:0;
 	}
+
 	
 	#see_more{
 		width:80%;
@@ -334,20 +374,24 @@ html{
 	.lead{
 		text-align:center;
 	}
-	
-	.list_ind{
-		display:none;
-	}
+
 	
 	#grafic_element{
 		padding-left:10px;
 		padding-right:10px;
-		padding-top:30px;
-		padding-bottom:30px;
+		padding-top:20px;
+		padding-bottom:5px;
+		background-color:#f5df4d;
+	}
+	
+		
+	.list-custom-item{
+		word-break: break-word;
 	}
 	
 	#services{
 		flex-direction:column;
+		padding-top:5px;
 	}
 	
 	#services_head,#services_list{
@@ -402,12 +446,34 @@ html{
 	.strip_span_small{
 		font-size:1rem;
 	}
-		
+
 
 }
 
 @media screen and (max-width: 992px){
 
+	.list_ind{
+		display:none;
+	}
+	
+	#grafic_element{
+		padding-top:20px;
+		padding-bottom:20px;
+		background-color:#f5df4d;
+	}
 
+	#services{
+		flex-direction:column;
+		padding-top:5px;
+	}
+	
+	#services_head,#services_list{
+		width:100%;
+	}
+	
+	#services_head_header{
+		font-size:5rem;
+	}
+	
 }
 
