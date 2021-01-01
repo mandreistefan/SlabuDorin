@@ -49,6 +49,10 @@ html{
 
 .btn_custom{
 	height:40px;
+	border-top:0;
+	border-left:0;
+	border-right:0;
+	border-radius:0;
 }
 
 .main_content{
@@ -365,7 +369,6 @@ html{
 		border-right:0;
 		border-radius:0;
 	}
-
 	
 	#see_more{
 		width:80%;
@@ -375,23 +378,8 @@ html{
 		text-align:center;
 	}
 
-	
-	#grafic_element{
-		padding-left:10px;
-		padding-right:10px;
-		padding-top:20px;
-		padding-bottom:5px;
-		background-color:#f5df4d;
-	}
-	
-		
 	.list-custom-item{
 		word-break: break-word;
-	}
-	
-	#services{
-		flex-direction:column;
-		padding-top:5px;
 	}
 	
 	#services_head,#services_list{
@@ -457,6 +445,8 @@ html{
 	}
 	
 	#grafic_element{
+		padding-left:10px;
+		padding-right:10px;
 		padding-top:20px;
 		padding-bottom:20px;
 		background-color:#f5df4d;
@@ -471,9 +461,35 @@ html{
 		width:100%;
 	}
 	
-	#services_head_header{
-		font-size:5rem;
-	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+#heat_ind_list{
+	top:calc(50% + 10px);
+	left:calc(12.5% - 150px);
+	width:300px;
+	height:110px;
+
+}
+
+#floor_ind_list{
+	bottom:-90px;
+	left:calc(25% - 125px);
+}
+
+#sanit_ind_list{
+	bottom:calc(50% + 50px);
+	right:-100px;
+	height:auto;
+	width:250px;
+}
+
+#services_head_header{
+	font-size:5rem;
+}
+
+
 	
 }
 
