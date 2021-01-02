@@ -435,7 +435,26 @@ html{
 		font-size:1rem;
 	}
 
+	.indicator{
+		width:20px;
+		height:20px;
+	}
+	
+	#floor_ind{
+		bottom:calc(25%);
+		left:calc(25% - 10px);
+	}
+	
+	#wall_ind{
+		bottom:calc(50%);
+		left:calc(37.5% - 15px);
+	}
 
+	#tiles_ind{
+		bottom:calc(25%);
+		right:calc(25% - 10px);
+	}
+	
 }
 
 @media screen and (max-width: 992px){
@@ -461,7 +480,55 @@ html{
 		width:100%;
 	}
 	
+
+	#floor_ind{
+		bottom:calc(25%);
+		left:calc(25% - 10px);
+	}
+	
+	#wall_ind{
+		bottom:calc(50%);
+		left:calc(37.5% - 15px);
+	}
+
+	#tiles_ind{
+		bottom:calc(25%);
+		right:calc(25% - 10px);
+	}
+
 }
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+			
+	.indicator{
+		width:40px;
+		height:40px;
+	}
+	
+	
+	#services_head_header{
+		font-size:6rem;
+	}
+	
+	#strip{
+		flex-direction:column;
+		padding:10px;
+		padding-left:50px;
+		padding-right:50px;
+	}	
+	
+	.strip_image{
+		width:80px;
+		height:80px;
+	}
+	
+	.strip_element{
+		width:100%;
+		margin-bottom:10px;
+		padding:10px;
+	}
+}
+
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
 
