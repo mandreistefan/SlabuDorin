@@ -1,0 +1,32 @@
+<images>
+	<imagine>
+		<titlu>Titlu poza no.1</titlu>
+		<subtitlu>Subtitle</subtitlu>
+		<descriere>Descriere pentru prima poza</descriere>
+		<data_imagine>12.12.12</data_imagine>
+	</imagine>	
+	<imagine>
+		<titlu>Titlu imagine no.2</titlu>
+		<subtitlu>Subtitle</subtitlu>
+		<descriere>Descriere pentru asta</descriere>
+		<data_imagine>12.12.12</data_imagine>
+	</imagine>	
+	<imagine>
+		<titlu>Title</titlu>
+		<subtitlu>Subtitle</subtitlu>
+		<descriere>Un text mai lung care descrie poza asta si are mai multe caractere.</descriere>
+		<data_imagine>12.12.12</data_imagine>
+	</imagine>	
+	<imagine>
+		<titlu>Title</titlu>
+		<subtitlu>Subtitle</subtitlu>
+		<descriere>Descriere</descriere>
+		<data_imagine>12.12.12</data_imagine>
+	</imagine>
+	<imagine>
+		<titlu>Titlu custom</titlu>
+		<subtitlu>Subtitle</subtitlu>
+		<descriere>Descriere pentru aceasta imagine</descriere>
+		<data_imagine>12.20.12</data_imagine>
+	</imagine>
+</images>

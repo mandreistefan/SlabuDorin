@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <title>Numesite</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="images.css">
+</head>
+
+<html lang="ro">
+	<div class="jumbotron">
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="./home.html" id="take_me_home"><i class="fa fa-home"></i>Acasa</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Galerie</li>
+		  </ol>
+		</nav>
+		<div id="jumbotron_additional_info">
+				<ul id="jumbotron_contact">
+					<li class="jumbotron_contact_list_element"><i class="fa fa-phone"></i> Telefon/ <i class="fa fa-whatsapp"></i> WhatsApp: <span style="font-weight:400">077773453</span></li><br>
+					<li class="jumbotron_contact_list_element"><i class="fa fa-envelope-o"></i> Email:</span> <span style="font-weight:400">slabudorinpfa@gmail.com</span></li>
+				</ul>
+		</div>
+		<p class="lead mb-2" style="padding-left:16px">Faceti click pe imagini pentru a le mari.</p>
+	</div>
+	
+	<body onload="load_images()">
+	<div id="container_custom">
+		<div class="galerie" id="galerie">
+		</div>
+	</div>	
+	</body>	
+</html>
+
+<script>
+	function load_images(){
+		var xhttp = new XMLHttpRequest();
+		xhttp.open("GET", "./_images/_registru.xml", true);
+		xhttp.send();
+		xhttp.onreadystatechange = function() {
+			if (xhttp.readyState == 4 && xhttp.status == 200) {
+				var xmlDoc = xhttp.responseXML;
+				var images = xmlDoc.getElementsByTagName("imagine");
+				var container=document.getElementById("galerie");
+				var div, thumbnail, imagine, titlu, descriere;
+				for(var i=0;i<images.length;i++){
+					  div = document.createElement('div');
+					  div.className="col-md-3 custom_image_container";
+					  
+					  thumbnail=document.createElement('div');
+					  thumbnail.className="custom-thumbnail";
+					  div.appendChild(thumbnail);
+					  
+					  link=document.createElement('A');
+					  link.setAttribute('href', "./_images/_"+i+".jpg");
+					  thumbnail.appendChild(link);
+					  
+					  imagine = document.createElement("IMG");
+					  imagine.className="custom_image";
+					  imagine.setAttribute("src", "./_images/_"+i+".jpg");
+					  
+					  link.appendChild(imagine);
+				  
+					  titlu = document.createElement("h4");
+					  titlu.innerText = images[i].getElementsByTagName("titlu")[0].childNodes[0].nodeValue;
+					  link.appendChild(titlu);
+					  
+					  descriere = document.createElement("p");
+					  descriere.innerText = images[i].getElementsByTagName("descriere")[0].childNodes[0].nodeValue;
+					  link.appendChild(descriere);
+					  
+					  container.appendChild(div);
+				}
+			}
+		};
+	}
+</script>
+

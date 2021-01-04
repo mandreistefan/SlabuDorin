@@ -9,7 +9,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="colors.css">
 </head>
 <html lang="ro">
 <!--<?php include_once("navigation.html")?>-->
@@ -21,99 +20,141 @@
 	<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
 	<h1 class="display-4" id="jumbotron_header">Dorin Slabu</h1>
   </div>
-  <p class="lead mb-2">Slabu Dorin, Persoana Fizica Autorizata</p>
+  <div id="jumbotron_additional_info">
+		<p class="lead mb-2">Acasa<br>Persoana Fizica Autorizata<br>Renovari interioare - exterioare.</p>
+		<ul id="jumbotron_contact">
+			<h4 class="lead" id="jumbotron_contact_head">Contact</h4>
+			<li class="jumbotron_contact_list_element"><i class="fa fa-phone"></i> Telefon/ <i class="fa fa-whatsapp"></i> WhatsApp: <span style="font-weight:400">077773453</span></li><br>
+			<li class="jumbotron_contact_list_element"><i class="fa fa-envelope-o"></i> Email:</span> <span style="font-weight:400">slabudorinpfa@gmail.com</span></li>
+		</ul>
+  </div>	
   <hr class="my-1 jumbotron_hr">
-  <p class="second_lead">Servicii complete de la lorem ipsum.</p>
-  <p class="lead">
-    <a class="btn btn-outline-info btn-lg btn_custom" href="#" role="button">Contact</a>
-	<a class="btn btn-outline-info btn-lg btn_custom" href="#" role="button">Galerie</a>
-	<a class="btn btn-outline-info btn-lg btn_custom" href="./home.html#content" role="button" id="see_more">Vezi mai multe</a>
-  </p>
+  <p class="second_lead"></p>
+  	<p class="lead">
+	  <a class="btn btn-outline-dark btn-lg btn_custom" href="./images.html" role="button">Galerie</a>
+	  <a class="btn btn-outline-dark btn-lg btn_custom" href="./home.html#content" role="button" id="see_more">Vezi mai multe<i class="fa fa-chevron-down"></i></a>
+	</p>
 </div>
 
-	<div class="main_content" style="background-color:#f8f8ff;color:#333333">
-		<div class="element" id="grafic_element">
+	<div class="main_content" style="background-color:#f8f8ff;color:#333333" id="content">
+		<div class="element" id="grafic_element" style="width:100%;position:relative">
 				<div class="image_container" style="position:relative">
-					<img class="image_big" src="./_img/that_big_thing.png" alt="Produse_img">
-					<div class="indicator" id="wall_ind">1</div>
+					<img class="image_big" src="./_img/that_big_thing2.png" alt="Produse_img">
+					<div class="indicator" id="heat_ind">1</div>
 					<div class="indicator" id="floor_ind">2</div>
-					<div class="indicator" id="lights_ind">3</div>
-					<div class="indicator" id="heat_ind">4</div>
-					<div class="indicator" id="floorheat_ind">5</div>
-					<div class="indicator" id="sanit_ind">6</div>
-					<div class="indicator" id="tiles_ind">7</div>
-					<div class="indicator" id="ext_ind">8</div>
+					<div class="indicator" id="wall_ind">3</div>
+					<div class="indicator" id="sanit_ind">5</div>
+					<div class="indicator" id="lights_ind">4</div>					
+					<div class="indicator" id="tiles_ind">6</div>
+					<div class="list_ind" id="heat_ind_list">
+						<li class="list-custom-item list-custom-item-header">1 - Instalatii termice</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea centralei termice, instalatiilor de cupru si caloriferelor</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Incalzire prin pardoseala.</li>
+					</div>
+					<div class="list_ind" id="floor_ind_list">
+						<li class="list-custom-item list-custom-item-header">2 - Podele</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Montaj parchet si plinta</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Montaj mocheta</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Montaj linoleum</li>
+					</div>
+					<div class="list_ind" id="wall_ind_list">
+						<li class="list-custom-item list-custom-item-header">3 - Pereti</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Gleturie, varuire si vopsire</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Tapetare</li>
+					</div>
+					<div class="list_ind" id="sanit_ind_list">
+						<li class="list-custom-item list-custom-item-header">5 - Instalatii sanitare</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea corpurilor sanitare(chiuveta, WC, bideu, etc.).</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea dusului(cu cabina de dus sau fara cabina de dus).</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea scurgerilor PVC.</li>
+					</div>
+					<div class="list_ind" id="lights_ind_list">
+						<li class="list-custom-item list-custom-item-header">4 - Instalatii electrice</li>
+					</div>
+					<div class="list_ind" id="tiles_ind_list">
+						<li class="list-custom-item list-custom-item-header">6 - Gresie si faianta</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea gresiei</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea faiantei</li>
+					</div>
 				</div>
 		</div>
-		<div class="element" style="padding-left:1rem;padding-right:1rem;" id="list_element">
-			<ul class="ul_big" style="display:flex;flex-direction:row;">
-				<ul class="ul_small"> 
-					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-						<div class="indicator_inactive" id="wall_ind_inactive" style="position:relative">1</div> 
-						<h5 class="h-center">Varuire si vopsire.</h5>
-					</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i> Gleturie, varuire si vopsire</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i> Tapetare</li>
-				</ul>
-				<ul class="ul_small">
-					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-						<div class="indicator_inactive"  id="floor_ind_inactive" style="position:relative">2</div>
-						<h5 class="h-center">Podele.</h5>
-					</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i> Montaj parchet si plinta</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i> Montaj mocheta</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i> Montaj linoleum</li>
-				</ul>
-				<ul class="ul_small">
-					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-						<div class="indicator_inactive" id="lights_ind_inactive" style="position:relative">3</div>
-						<h5 class="h-center">Instalatii electrice.</h5>
-					</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i> Instalatii electrice.</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i> Montaj corpuri de iluminat si intrerupatoare(clasic, cap-scara, cruce).</li>
-				</ul>
-				<ul class="ul_small">
-					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-						<div class="indicator_inactive" id="heat_ind_inactive" style="position:relative">4</div>
-						<h5 class="h-center">Instalatii termice.</h5>
-					</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea centralei termice.</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea caloriferelor.</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea instalatiilor de cupru.</li>
-					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-						<div class="indicator_inactive" id="floorheat_ind_inactive" style="position:relative">5</div>
-						<h5>Incalzire prin pardoseala.</h5>
-					</li>
-				</ul>
-				<ul class="ul_small">
-					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-						<div class="indicator_inactive" id="sanit_ind_inactive" style="position:relative">6</div>
-						<h5 class="h-center">Instalatii sanitare.</h5>
-					</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea corpurilor sanitare(chiuveta, WC, bideu, etc.).</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea dusului(cu cabina de dus sau fara cabina de dus).</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea scurgerilor PVC.</li>
-				</ul>
-				<ul class="ul_small">
-					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-						<div class="indicator_inactive" id="tiles_ind_inactive" style="position:relative">7</div>
-						<h5 class="h-center">Gresie si faianta.</h5>
-					</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea gresiei</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea faiantei</li>
-				</ul>
-				<ul class="ul_small">
-					<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-						<div class="indicator_inactive" id="sanit_ind_inactive" style="position:relative">8</div>
-						<h5 class="h-center">Exterioare.</h5>
-					</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea corpurilor sanitare(chiuveta, WC, bideu, etc.).</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea dusului(cu cabina de dus sau fara cabina de dus).</li>
-					<li class="list-custom-item"><i class="fa fa-check"></i>Montarea scurgerilor PVC.</li>
-				</ul>
-			</ul>			
-		</div>
 	</div>
+	<div class="element" id="services">
+			<div id="services_head">
+				<span id="services_head_header">Serviciile mele</span>
+			</div>			
+			<div id="services_list">
+				<ul class="ul_big">
+					<ul class="ul_small">
+						<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+							<div class="indicator_inactive" id="heat_ind_inactive" style="position:relative">1</div>
+							<h5 class="h-center">Instalatii termice.</h5>
+						</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea centralei termice.</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea caloriferelor.</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea instalatiilor de cupru.</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Incalzire prin pardoseala.</li>
+					</ul>
+					<ul class="ul_small">
+						<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+							<div class="indicator_inactive"  id="floor_ind_inactive" style="position:relative">2</div>
+							<h5 class="h-center">Podele.</h5>
+						</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Montaj parchet si plinta</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Montaj mocheta</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Montaj linoleum</li>
+					</ul>
+					<ul class="ul_small"> 
+						<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+							<div class="indicator_inactive" id="wall_ind_inactive" style="position:relative">3</div> 
+							<h5 class="h-center">Varuire si vopsire.</h5>
+						</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Gleturie, varuire si vopsire</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Tapetare</li>
+					</ul>
+					<ul class="ul_small">
+						<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+							<div class="indicator_inactive" id="lights_ind_inactive" style="position:relative">4</div>
+							<h5 class="h-center">Instalatii electrice.</h5>
+						</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Instalatii electrice.</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i> Montaj corpuri de iluminat si intrerupatoare(clasic, cap-scara, cruce).</li>
+					</ul>
+					<ul class="ul_small">
+						<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+							<div class="indicator_inactive" id="sanit_ind_inactive" style="position:relative">5</div>
+							<h5 class="h-center">Instalatii sanitare.</h5>
+						</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea corpurilor sanitare(chiuveta, WC, bideu, etc.).</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea dusului(cu cabina de dus sau fara cabina de dus).</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea scurgerilor PVC.</li>
+					</ul>
+					<ul class="ul_small">
+						<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+							<div class="indicator_inactive" id="tiles_ind_inactive" style="position:relative">6</div>
+							<h5 class="h-center">Gresie si faianta.</h5>
+						</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea gresiei</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea faiantei</li>
+					</ul>
+					<ul class="ul_small">
+						<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+							<div class="indicator_inactive" id="sanit_ind_inactive" style="position:relative">7</div>
+							<h5 class="h-center">Exterioare.</h5>
+						</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea corpurilor sanitare(chiuveta, WC, bideu, etc.).</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea dusului(cu cabina de dus sau fara cabina de dus).</li>
+						<li class="list-custom-item"><i class="fa fa-check"></i>Montarea scurgerilor PVC.</li>
+					</ul>
+					<ul class="ul_small">
+						<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
+							<div class="indicator_inactive" id="sanit_ind_inactive" style="position:relative">?</div>
+							<h5 class="h-center">Cauti ceva ce nu e in lista?<br><a style="color:#333333" href="">Contacteaza-ma.</a></h5>
+						</li>
+					</ul>
+				</ul>			
+			</div>
+		</div>
 
 <div id="strip">
 		<div class="strip_element">
@@ -123,7 +164,7 @@
 		</div>
 		<div class="strip_element">
 			<img class="strip_image" src="./_img/lightbulb_icon.png" alt="Produse_img"><br>	
-			<span class="strip_span">Atestat instalatii electrice</span>
+			<span class="strip_span">Diploma instalatii electrice</span>
 			<span class="strip_span_small" style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span>
 		</div>
 		<div class="strip_element">
@@ -132,35 +173,9 @@
 			<span class="strip_span_small" style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span>
 		</div>
 </div>
-<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="3000">
-        <img src="./_img/test1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-interval="3000">
-      <img src="./_img/test1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-interval="3000">
-      <img src="./_img/test1.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 
-<div class="footer" style="background-color:#333333;display:flex;flex-direction:column;justify-content:center;padding-left:20px;padding-right:20px;padding-top:20px">
-<h5 style="color:white">Contact</h5>
-	<div class="footer_contact">
-		<span style="font-weight:600;color:White"><li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-phone"></i> Telefon<br>077773453</li>
-		<li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-whatsapp"></i> WhatsApp<br>077773453</li>
-		<li style="list-style-type: none; margin-bottom: 10px"><i class="fa fa-envelope-o"></i> Email</span><br>mail@gmail.com</li></span>
-	</div>
+<div class="footer" style="background-color:#333333;color:white;padding:10px;text-align:center">
+Slabu Dorin, P.F.A.<br>Site DEV: m.andrei.stefan@gmail.com
 </div>	
 
 </html>
@@ -168,8 +183,11 @@
 <script>
 $(".indicator" ).click(function() {
    var id = $(this).attr('id');
-   $('div[class~="indicator_inactive"]').css({'box-shadow':'0 0 0 0px rgba(230,57,70, 0.9)'})
-   $("#"+id+"_inactive").css({'box-shadow':'0 0 0 4px rgba(230,57,70, 0.9)'});
+   $('div[class~="indicator_inactive"]').css({'background-color':'transparent'});
+   $('div[class~="indicator_inactive"]').css({'color':'#333333'});
+   $("#"+id+"_inactive").css({'background-color':'#333333'});
+   $("#"+id+"_inactive").css({'color':'#f5df4d'});
+   window.location.href = "./home2.html"+"#"+id+"_inactive";
 });
 </script>
 
