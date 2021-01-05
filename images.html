@@ -15,10 +15,11 @@
 	<div class="jumbotron">
 		<nav aria-label="breadcrumb">
 		  <ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="./home.html" id="take_me_home"><i class="fa fa-home"></i>Acasa</a></li>
+			<li class="breadcrumb-item"><a href="./home.html" id="take_me_home"><i class="fa fa-home"></i>Pagina principala</a></li>
 			<li class="breadcrumb-item active" aria-current="page">Galerie</li>
 		  </ol>
 		</nav>
+		<br>
 		<div id="jumbotron_additional_info">
 				<ul id="jumbotron_contact">
 					<li class="jumbotron_contact_list_element"><i class="fa fa-phone"></i> Telefon/ <i class="fa fa-whatsapp"></i> WhatsApp: <span style="font-weight:400">077773453</span></li><br>
@@ -28,16 +29,19 @@
 		<p class="lead mb-2" style="padding-left:16px">Faceti click pe imagini pentru a le mari.</p>
 	</div>
 	
-	<body onload="load_images()">
+	<body onload="load_images(0,8)">
 	<div id="container_custom">
 		<div class="galerie" id="galerie">
 		</div>
 	</div>	
+	<button type="button" id="load_more" class="btn btn-dark">Incarca mai multe</button>	
+</nav>
+	
 	</body>	
 </html>
 
 <script>
-	function load_images(){
+	function load_images(from,to){
 		var xhttp = new XMLHttpRequest();
 		xhttp.open("GET", "./_images/_registru.xml", true);
 		xhttp.send();
@@ -47,36 +51,56 @@
 				var images = xmlDoc.getElementsByTagName("imagine");
 				var container=document.getElementById("galerie");
 				var div, thumbnail, imagine, titlu, descriere;
-				for(var i=0;i<images.length;i++){
-					  div = document.createElement('div');
-					  div.className="col-md-3 custom_image_container";
+				//var image_step=8;
+					if(to>parseInt(images.length)){
+						to=parseInt(images.length);
+						$("#load_more").prop('disabled', true);
+					}
+					for(var i=from;i<to;i++){
+						  div = document.createElement('div');
+						  div.className="custom_image_container";
+
+						  thumbnail=document.createElement('div');
+						  thumbnail.className="custom-thumbnail";
+						  div.appendChild(thumbnail);
+						  
+						  link=document.createElement('A');
+						  link.setAttribute('href', "./_images/_"+i+".jpg");
+						  link.setAttribute('target', "_blank");
+						  link.className="image_link";
+						  thumbnail.appendChild(link);
+						  
+						  imagine = document.createElement("IMG");
+						  imagine.className="custom_image";
+						  imagine.setAttribute("src", "./_images/_"+i+".jpg");
+						  
+						  link.appendChild(imagine);
 					  
-					  thumbnail=document.createElement('div');
-					  thumbnail.className="custom-thumbnail";
-					  div.appendChild(thumbnail);
-					  
-					  link=document.createElement('A');
-					  link.setAttribute('href', "./_images/_"+i+".jpg");
-					  thumbnail.appendChild(link);
-					  
-					  imagine = document.createElement("IMG");
-					  imagine.className="custom_image";
-					  imagine.setAttribute("src", "./_images/_"+i+".jpg");
-					  
-					  link.appendChild(imagine);
-				  
-					  titlu = document.createElement("h4");
-					  titlu.innerText = images[i].getElementsByTagName("titlu")[0].childNodes[0].nodeValue;
-					  link.appendChild(titlu);
-					  
-					  descriere = document.createElement("p");
-					  descriere.innerText = images[i].getElementsByTagName("descriere")[0].childNodes[0].nodeValue;
-					  link.appendChild(descriere);
-					  
-					  container.appendChild(div);
-				}
+						  titlu = document.createElement("h4");
+						  titlu.innerText = images[i].getElementsByTagName("titlu")[0].childNodes[0].nodeValue;
+						  link.appendChild(titlu);
+						  
+						  descriere = document.createElement("p");
+						  descriere.innerText = images[i].getElementsByTagName("descriere")[0].childNodes[0].nodeValue;
+						  link.appendChild(descriere);
+						  
+						  document.getElementById("galerie").appendChild(div);
+					}					
+			}else if(xhttp.status == 404){
+				div = document.createElement('div');
+				div.innerHTML="Ceva nu e ok aici:(";
+				document.getElementById('container_custom').appendChild(div);
 			}
 		};
 	}
+	
+	$("#load_more").click(function(){
+		var from=$('.custom_image_container').length;
+		var to=from+8;
+		load_images(from,to);
+		}
+	)
+	
+	
 </script>
 
