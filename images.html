@@ -9,34 +9,43 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="images.css">
+  <link rel="stylesheet" href="navigation.css">
 </head>
 
 <html lang="ro">
-	<div class="jumbotron">
-		<nav aria-label="breadcrumb">
-		  <ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="./home.html" id="take_me_home"><i class="fa fa-home"></i>Pagina principala</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Galerie</li>
-		  </ol>
-		</nav>
-		<br>
-		<div id="jumbotron_additional_info">
-				<ul id="jumbotron_contact">
-					<li class="jumbotron_contact_list_element"><i class="fa fa-phone"></i> Telefon/ <i class="fa fa-whatsapp"></i> WhatsApp: <span style="font-weight:400">077773453</span></li><br>
-					<li class="jumbotron_contact_list_element"><i class="fa fa-envelope-o"></i> Email:</span> <span style="font-weight:400">slabudorinpfa@gmail.com</span></li>
-				</ul>
-		</div>
-		<p class="lead mb-2" style="padding-left:16px">Faceti click pe imagini pentru a le mari.</p>
-	</div>
-	
 	<body onload="load_images(0,8)">
-	<div id="container_custom">
-		<div class="galerie" id="galerie">
+		<div class="navigation">
+			<div id="logo_container">
+				<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
+				<div id="logo_text_container">
+					<span id="logo_container_header">Dorin Slabu, P.F.A.</span><br>
+					<span id="logo_container_span"><i class="fa fa-home"></i>Renovari interioare - exterioare</span>
+					<hr style="margin:8px" id="mobile_hr">
+					<li class="jumbotron_contact_list_element">
+						<i class="fa fa-phone"></i> <span class="logo_container_span">Telefon: </span> <span style="font-weight:400">077773453</span>
+					</li>
+					<li class="jumbotron_contact_list_element">
+						<i class="fa fa-whatsapp"></i> <span class="logo_container_span">WhatsApp: </span <span style="font-weight:400">077773453</span>
+					</li>
+					<li class="jumbotron_contact_list_element">
+						<i class="fa fa-envelope-o"></i> <span class="logo_container_span">Email: </span><span style="font-weight:400">slabudorinpfa@gmail.com</span>
+					</li>
+				</div>
+			</div>
+			<div id="button_container">
+				<a class="btn  btn_custom" href="./images.html" role="button"><i class="fa fa-phone"></i> Contact</a>
+				<a class="btn  btn_custom" href="./home.html#strip" role="button"><i class="fa fa-user"></i> Despre mine</a>
+				<a class="btn  btn_custom" href="./images.html" id="gallery_button" role="button"><i class="fa fa-file-image-o"></i> Galerie</a>
+				<a class="btn  btn-lg btn_custom mobile_button" href="./home.html#content" role="button" id="see_more">Vezi mai multe<i class="fa fa-chevron-down"></i></a>
+			</div>
 		</div>
-	</div>	
-	<button type="button" id="load_more" class="btn btn-dark">Incarca mai multe</button>	
-</nav>
-	
+		<div id="container_custom">
+			<div class="galerie" id="galerie">
+			</div>
+			<div id="button_container">
+				<button type="button" id="load_more" class="btn btn-dark">Incarca mai multe</button>	
+			</div>
+		</div>
 	</body>	
 </html>
 

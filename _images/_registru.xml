@@ -53,4 +53,28 @@
 		<descriere>Descriere pentru aceasta imagine</descriere>
 		<data_imagine>12.20.12</data_imagine>
 	</imagine>
+	<imagine>
+		<titlu>ce vrei tu</titlu>
+		<subtitlu>Subtitle</subtitlu>
+		<descriere>Descriere pentru aceasta imagine</descriere>
+		<data_imagine>12.20.12</data_imagine>
+	</imagine>
+	<imagine>
+		<titlu>Scari</titlu>
+		<subtitlu>Scari</subtitlu>
+		<descriere>O imagine cu scari</descriere>
+		<data_imagine>12.20.12</data_imagine>
+	</imagine>
+	<imagine>
+		<titlu>Scari</titlu>
+		<subtitlu>Scari</subtitlu>
+		<descriere>O imagine cu scari</descriere>
+		<data_imagine>12.20.12</data_imagine>
+	</imagine>
+	<imagine>
+		<titlu>Parchet</titlu>
+		<subtitlu>Scari</subtitlu>
+		<descriere>O iamgine cu parchet</descriere>
+		<data_imagine>12.20.12</data_imagine>
+	</imagine>
 </images>

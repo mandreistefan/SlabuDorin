@@ -9,35 +9,37 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="navigation.css">
 </head>
 <html lang="ro">
 <!--<?php include_once("navigation.html")?>-->
 <body>
 
-</body>
-<div class="jumbotron">
-  <div id="jumbotron_logo_container">
-	<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
-	<h1 class="" id="jumbotron_header">Dorin Slabu</h3>
-  </div>
-  <div id="jumbotron_additional_info">
-		<p class="lead mb-2">	
-		<span style="font-size:1.5rem"><i class="fa fa-home"></i>Pagina principala</span>
-		<br>Persoana Fizica Autorizata<br>Renovari interioare - exterioare.</p>
-		<ul id="jumbotron_contact">
-			<h4 class="lead" id="jumbotron_contact_head" style="font-size:1.5rem">Contact</h4>
-			<li class="jumbotron_contact_list_element"><i class="fa fa-phone"></i> Telefon/ <i class="fa fa-whatsapp"></i> WhatsApp: <span style="font-weight:400">077773453</span></li><br>
-			<li class="jumbotron_contact_list_element"><i class="fa fa-envelope-o"></i> Email:</span> <span style="font-weight:400">slabudorinpfa@gmail.com</span></li>
-		</ul>
-  </div>	
-  <hr class="my-1 jumbotron_hr">
-  <p class="second_lead"></p>
-  	<p class="lead">
-	  <a class="btn btn-outline-dark btn-lg btn_custom" href="./images.html" role="button">Galerie</a>
-	  <a class="btn btn-outline-dark btn-lg btn_custom" href="./home.html#content" role="button" id="see_more">Vezi mai multe<i class="fa fa-chevron-down"></i></a>
-	</p>
+<div class="navigation">
+	<div id="logo_container">
+		<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
+		<div id="logo_text_container">
+			<span id="logo_container_header">Dorin Slabu, P.F.A.</span><br>
+			<span id="logo_container_span"><i class="fa fa-home"></i>Renovari interioare - exterioare</span>
+			<hr style="margin:8px" class="mobile_hr">
+			<li class="jumbotron_contact_list_element">
+				<i class="fa fa-phone"></i> <span class="logo_container_span">Telefon: </span> <span style="font-weight:400">077773453</span>
+			</li>
+			<li class="jumbotron_contact_list_element">
+				<i class="fa fa-whatsapp"></i> <span class="logo_container_span">WhatsApp: </span <span style="font-weight:400">077773453</span>
+			</li>
+			<li class="jumbotron_contact_list_element">
+				<i class="fa fa-envelope-o"></i> <span class="logo_container_span">Email: </span><span style="font-weight:400">slabudorinpfa@gmail.com</span>
+			</li>
+		</div>
+	</div>
+	<div id="button_container">
+		<a class="btn  btn_custom desktop_button" href="./images.html" role="button"><i class="fa fa-phone"></i> Contact</a>
+		<a class="btn  btn_custom" href="./home.html#strip" role="button"><i class="fa fa-user"></i> Despre mine</a>
+		<a class="btn  btn_custom" href="./images.html" id="gallery_button" role="button"><i class="fa fa-file-image-o"></i> Galerie</a>
+		<a class="btn  btn-lg btn_custom mobile_button" href="./home.html#content" role="button" id="see_more">Vezi mai multe<i class="fa fa-chevron-down"></i></a>
+	</div>
 </div>
-
 	<div class="main_content" style="background-color:#f8f8ff;color:#333333" id="content">
 		<div class="element" id="grafic_element" style="width:100%;position:relative">
 			<span id="services_head_header">Serviciile mele</span>
@@ -153,7 +155,9 @@
 						</ul>			
 					</div>
 				</div>
-			</div>	
+			</div>
+		</div>
+<div id="strip_label">Despre mine</div>		
 <div id="strip">
 		<div class="strip_element">
 			<img class="strip_image" src="./_img/exp_icon.png" alt="Produse_img"><br>
@@ -162,12 +166,24 @@
 		</div>
 		<div class="strip_element">
 			<img class="strip_image" src="./_img/lightbulb_icon.png" alt="Produse_img"><br>	
-			<span class="strip_span">Diploma instalatii electrice</span>
+			<span class="strip_span">Calificare instalatii electrice</span>
 			<span class="strip_span_small" style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span>
 		</div>
 		<div class="strip_element">
-			<img class="strip_image" src="./_img/lightbulb_icon.png" alt="Produse_img"><br>	
-			<span class="strip_span">Atestat instalatii electrice</span>
+			<img class="strip_image" src="./_img/pfa_icon.png" alt="Produse_img"><br>	
+			<span class="strip_span">Persoana fizica autorizata</span>
+			<span class="strip_span_small" style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span>
+		</div>
+</div>
+
+<div id="contact_label">Contact</div>		
+<div id="contact">
+		<div class="contact_element" style="float:right">
+			<li><i class="fa fa-map-marker"></i>
+			<li>Targu Ocna, Bacau</li>
+			<li>Romania</li>
+		</div>
+		<div class="contact_element" style="float:left">
 			<span class="strip_span_small" style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span>
 		</div>
 </div>
@@ -175,7 +191,7 @@
 <div class="footer" style="background-color:#333333;color:white;padding:10px;text-align:center;width:100%">
 Slabu Dorin, P.F.A.<br>Site DEV: m.andrei.stefan@gmail.com
 </div>	
-
+</body>
 </html>
 
 <script>

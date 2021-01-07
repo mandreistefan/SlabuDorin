@@ -1,0 +1,175 @@
+.desktop_button{
+	display:inline-block;
+}
+
+.mobile_button{
+	display:none;
+}
+
+.mobile_hr{
+	display:none;
+}
+
+.navigation{
+	width:100%;
+	display:inline-block;
+	background-color:#333333;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	align-items:center;
+}
+
+#logo_container{
+	background-color:#333333;
+	display:flex;
+	flex-direction:row;
+	align-items:center
+}
+
+#jumbotron_logo_container{
+	display:flex;
+	flex-direction:row; 
+	align-items:center;
+}	
+
+#jumbotron_logo{
+	width:80px;
+	height:80px;
+	margin-right:10px;
+}
+
+#logo_container_header{
+	color:#E63946;
+	font-size:1.5rem;
+	font-weight:600;
+}
+
+#logo_container_span{
+	color:gray;
+	font-size:.75rem;
+}
+
+.jumbotron_contact_list_element{
+	display:none;
+}
+
+#button_container{
+	width:auto;
+	display:inline;
+}
+
+.btn_custom{
+	border:0;
+	font-size:1.25rem;
+	color:white;
+	transition: text-shadow 0.3s ease-in-out;
+}
+
+.btn_custom:hover{
+	color:white;
+	text-shadow: 0 0 5px white;
+}
+
+#gallery_button{
+	color:#e63946;
+}
+
+#gallery_button:hover{
+	color:#e63946;
+	text-shadow: 0 0 5px #e63946;
+}
+
+#see_more{
+	display:none;
+}
+
+#mobile_hr{
+	display:none;
+}
+
+.fa-home{
+	display:none;
+}
+
+@media screen and (max-width: 576px){
+	
+	.desktop_button{
+		display:none;
+	}
+	
+	.mobile_button{
+		display:inline-block;
+	}
+	
+	.mobile_hr{
+		display:block;
+	}
+	
+	.navigation{
+		height:100vh;
+		flex-direction:column;
+		justify-content:flex-start;
+	}
+		
+	#logo_container{
+		flex-direction:column;
+		margin-top:35%;
+	}
+	
+	#logo_text_container{
+		text-align:center;
+	}
+	
+	.logo_container_span{
+		font-weight:600;
+	}
+	
+	#logo_container_header{
+		margin-bottom:20px;
+	}
+	
+	#logo_container_span{
+		color:white;
+		font-size:1rem;
+	}
+	
+	.fa-home{
+		display:inline;
+	}
+	
+	.jumbotron_contact_list_element{
+		display:inline-block;
+		color:white;
+		margin-bottom:0;
+		padding-left:0;
+		height:auto;
+		width:100%;
+		text-align:center;
+		margin-left:0;
+	}
+	
+	#button_container{
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	#see_more{
+		display:inline-block;
+	}
+	
+	.btn_custom{
+		width:100%;
+		margin-bottom:5px;
+		margin-top:5px;
+		height:40px;
+		border-top:0;
+		border-left:0;
+		border-right:0;
+		border-radius:0;
+	}
+}
