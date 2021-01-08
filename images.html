@@ -9,41 +9,28 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="images.css">
-  <link rel="stylesheet" href="navigation.css">
+  <link rel="stylesheet" href="navigation_lite.css">
 </head>
 
 <html lang="ro">
-	<body onload="load_images(0,8)">
+	<body onload="load_images(0,10)">
 		<div class="navigation">
-			<div id="logo_container">
+		<a href="./home.html" style="text-decoration:none">
+			<div id="logo_image_container">
 				<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
-				<div id="logo_text_container">
-					<span id="logo_container_header">Dorin Slabu, P.F.A.</span><br>
-					<span id="logo_container_span"><i class="fa fa-home"></i>Renovari interioare - exterioare</span>
-					<hr style="margin:8px" id="mobile_hr">
-					<li class="jumbotron_contact_list_element">
-						<i class="fa fa-phone"></i> <span class="logo_container_span">Telefon: </span> <span style="font-weight:400">077773453</span>
-					</li>
-					<li class="jumbotron_contact_list_element">
-						<i class="fa fa-whatsapp"></i> <span class="logo_container_span">WhatsApp: </span <span style="font-weight:400">077773453</span>
-					</li>
-					<li class="jumbotron_contact_list_element">
-						<i class="fa fa-envelope-o"></i> <span class="logo_container_span">Email: </span><span style="font-weight:400">slabudorinpfa@gmail.com</span>
-					</li>
+				<div style="">
+					<span id="logo_container_header">Dorin Slabu</span><br>
+					<span style="color:gray">Renovari interioare-exterioare</span>
 				</div>
-			</div>
-			<div id="button_container">
-				<a class="btn  btn_custom" href="./images.html" role="button"><i class="fa fa-phone"></i> Contact</a>
-				<a class="btn  btn_custom" href="./home.html#strip" role="button"><i class="fa fa-user"></i> Despre mine</a>
-				<a class="btn  btn_custom" href="./images.html" id="gallery_button" role="button"><i class="fa fa-file-image-o"></i> Galerie</a>
-				<a class="btn  btn-lg btn_custom mobile_button" href="./home.html#content" role="button" id="see_more">Vezi mai multe<i class="fa fa-chevron-down"></i></a>
-			</div>
+			</div>	
+		</a>
 		</div>
 		<div id="container_custom">
 			<div class="galerie" id="galerie">
+
 			</div>
-			<div id="button_container">
-				<button type="button" id="load_more" class="btn btn-dark">Incarca mai multe</button>	
+			<div id="load_more_container">
+				<button type="button" id="load_more" class="btn btn-dark">+</button>	
 			</div>
 		</div>
 	</body>	
@@ -87,14 +74,23 @@
 					  
 						  titlu = document.createElement("h4");
 						  titlu.innerText = images[i].getElementsByTagName("titlu")[0].childNodes[0].nodeValue;
-						  link.appendChild(titlu);
-						  
+						 						  
 						  descriere = document.createElement("p");
 						  descriere.innerText = images[i].getElementsByTagName("descriere")[0].childNodes[0].nodeValue;
-						  link.appendChild(descriere);
+						  
+						  spanul = document.createElement("span");
+						  spanul.className="short_descr";
+						  spanul.appendChild(titlu);
+						  spanul.appendChild(descriere);
+						  
+						  div.appendChild(spanul);
 						  
 						  document.getElementById("galerie").appendChild(div);
-					}					
+					}	
+					setTimeout(function(){
+						$(".short_descr").css("opacity","1");
+						}, 500);
+						$("#load_more_container").css("opacity","1");
 			}else if(xhttp.status == 404){
 				div = document.createElement('div');
 				div.innerHTML="Ceva nu e ok aici:(";
@@ -105,11 +101,10 @@
 	
 	$("#load_more").click(function(){
 		var from=$('.custom_image_container').length;
-		var to=from+8;
-		load_images(from,to);
-		}
-	)
-	
+		var to=from+10;
+			load_images(from,to);
+	});
+
 	
 </script>
 

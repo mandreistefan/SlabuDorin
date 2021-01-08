@@ -1,8 +1,8 @@
 <images>
 	<imagine>
-		<titlu>Titlu poza no.1</titlu>
+		<titlu>Dus fara cabina.</titlu>
 		<subtitlu>Subtitle</subtitlu>
-		<descriere>Descriere pentru prima poza</descriere>
+		<descriere>Montare dus, gresie, scurgeri, gresie si faianta.</descriere>
 		<data_imagine>12.12.12</data_imagine>
 	</imagine>	
 	<imagine>
@@ -63,18 +63,6 @@
 		<titlu>Scari</titlu>
 		<subtitlu>Scari</subtitlu>
 		<descriere>O imagine cu scari</descriere>
-		<data_imagine>12.20.12</data_imagine>
-	</imagine>
-	<imagine>
-		<titlu>Scari</titlu>
-		<subtitlu>Scari</subtitlu>
-		<descriere>O imagine cu scari</descriere>
-		<data_imagine>12.20.12</data_imagine>
-	</imagine>
-	<imagine>
-		<titlu>Parchet</titlu>
-		<subtitlu>Scari</subtitlu>
-		<descriere>O iamgine cu parchet</descriere>
 		<data_imagine>12.20.12</data_imagine>
 	</imagine>
 </images>

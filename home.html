@@ -17,25 +17,32 @@
 
 <div class="navigation">
 	<div id="logo_container">
-		<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
+		<a href="./home.html" style="text-decoration:none">
+			<div id="logo_image_container">
+				<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
+				<div id="logo_header_text_container">
+					<span id="logo_container_header">Dorin Slabu</span><br>
+					<span id="logo_container_span_small" style="color:gray">Renovari interioare-exterioare</span>
+				</div>
+			</div>	
+		</a>
 		<div id="logo_text_container">
-			<span id="logo_container_header">Dorin Slabu, P.F.A.</span><br>
-			<span id="logo_container_span"><i class="fa fa-home"></i>Renovari interioare - exterioare</span>
+			<span id="logo_container_span" class="mobile_button"><i class="fa fa-home"></i>Renovari interioare - exterioare</span>
 			<hr style="margin:8px" class="mobile_hr">
 			<li class="jumbotron_contact_list_element">
-				<i class="fa fa-phone"></i> <span class="logo_container_span">Telefon: </span> <span style="font-weight:400">077773453</span>
+				<i class="fa fa-phone"></i> <span class="logo_container_span">Telefon: </span> <span style="font-weight:400">0729578894</span>
 			</li>
 			<li class="jumbotron_contact_list_element">
-				<i class="fa fa-whatsapp"></i> <span class="logo_container_span">WhatsApp: </span <span style="font-weight:400">077773453</span>
+				<i class="fa fa-whatsapp"></i> <span class="logo_container_span">WhatsApp: </span <span style="font-weight:400">0729578894</span>
 			</li>
 			<li class="jumbotron_contact_list_element">
-				<i class="fa fa-envelope-o"></i> <span class="logo_container_span">Email: </span><span style="font-weight:400">slabudorinpfa@gmail.com</span>
+				<i class="fa fa-envelope-o"></i> <span class="logo_container_span">Email: </span><span style="font-weight:400">slabudorin@gmail.com</span>
 			</li>
 		</div>
 	</div>
 	<div id="button_container">
-		<a class="btn  btn_custom desktop_button" href="./images.html" role="button"><i class="fa fa-phone"></i> Contact</a>
-		<a class="btn  btn_custom" href="./home.html#strip" role="button"><i class="fa fa-user"></i> Despre mine</a>
+		<a class="btn  btn_custom desktop_button" href="./home.html#contact" role="button"><i class="fa fa-phone"></i> Contact</a>
+		<a class="btn  btn_custom desktop_button" href="./home.html#about_me" role="button"><i class="fa fa-user"></i> Despre mine</a>
 		<a class="btn  btn_custom" href="./images.html" id="gallery_button" role="button"><i class="fa fa-file-image-o"></i> Galerie</a>
 		<a class="btn  btn-lg btn_custom mobile_button" href="./home.html#content" role="button" id="see_more">Vezi mai multe<i class="fa fa-chevron-down"></i></a>
 	</div>
@@ -122,7 +129,7 @@
 							</ul>
 							<ul class="ul_small">
 								<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-									<div class="indicator_inactive" id="sanit_ind_inactive" style="position:relative">5</div>
+									<div class="indicator_inactive" id="lights_ind_inactive" style="position:relative">5</div>
 									<h5 class="h-center">Instalatii sanitare.</h5>
 								</li>
 								<li class="list-custom-item"><i class="fa fa-check"></i>Montarea corpurilor sanitare(chiuveta, WC, bideu, etc.).</li>
@@ -157,7 +164,7 @@
 				</div>
 			</div>
 		</div>
-<div id="strip_label">Despre mine</div>		
+<div id="about_me">Despre mine</div>		
 <div id="strip">
 		<div class="strip_element">
 			<img class="strip_image" src="./_img/exp_icon.png" alt="Produse_img"><br>
@@ -178,13 +185,22 @@
 
 <div id="contact_label">Contact</div>		
 <div id="contact">
-		<div class="contact_element" style="float:right">
-			<li><i class="fa fa-map-marker"></i>
-			<li>Targu Ocna, Bacau</li>
-			<li>Romania</li>
+		<div class="contact_element" style="text-align:right;width:50%;padding-right:1rem;">
+			<li class="contact_list_element"><span class="logo_container_span">Adresa </span><i class="fa fa-map-marker"></i></li>
+			<li class="contact_list_element" style="font-weight:300">Targu Ocna, Bacau</li>
+			<li class="contact_list_element" style="font-weight:300">Romania</li>
 		</div>
-		<div class="contact_element" style="float:left">
-			<span class="strip_span_small" style="color:#b3b3b3">Lorem ipsum, son, lorem ipsum text aici de filler cu care umpli spatiul De preferat mai multe pentru umplut spatiul. fwef wfwef</span>
+		<hr style="border-left:1px solid white;height:100px;margin-left:1px;margin-right:1px">
+		<div class="contact_element" style="padding-left:1rem">
+			<li class="contact_list_element">
+				<i class="fa fa-phone"></i> <span class="logo_container_span">Telefon: </span> <span style="font-weight:300">0729578894</span>
+			</li>
+			<li class="contact_list_element">
+				<i class="fa fa-whatsapp"></i> <span class="logo_container_span">WhatsApp: </span> <span style="font-weight:300">0729578894</span>
+			</li>
+			<li class="contact_list_element">
+				<i class="fa fa-envelope-o"></i> <span class="logo_container_span">Email: </span><span style="font-weight:300">slabudorin@gmail.com</span>
+			</li>
 		</div>
 </div>
 
