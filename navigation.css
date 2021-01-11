@@ -203,7 +203,7 @@
 	}
 
 	#logo_image_container{
-		flex-direction:column;
+		flex-direction:row;
 		justify-content:center;
 	}
 
@@ -219,8 +219,8 @@
 	}	
 
 	#jumbotron_logo{
-		width:80px;
-		height:80px;
+		width:60px;
+		height:60px;
 		transition: 0.3s ease-in-out;
 	}
 
@@ -236,10 +236,13 @@
 	
 	#button_container{
 		width:70%;
+		display:flex;
+		justify-content:flex-end;
 	}
 	
 	.btn_custom{
 		font-size:1.25rem;
+		float:left;
 	}
 	
 
