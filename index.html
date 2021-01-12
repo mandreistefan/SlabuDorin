@@ -26,7 +26,7 @@
 			</div>	
 		</a>
 		<div id="logo_text_container">
-			<span id="logo_container_span" class="mobile_button"><i class="fa fa-home"></i>Renovari interioare - exterioare. Constructii de la zero</span>
+			<span id="logo_container_span" class="mobile_button"><i class="fa fa-home"></i>Renovari interioare - exterioare<br> Constructii de la zero</span>
 			<hr style="margin:8px" class="mobile_hr">
 			<li class="jumbotron_contact_list_element">
 				<i class="fa fa-phone"></i> <span class="logo_container_span">Telefon: </span> <span style="font-weight:400">0729578894</span>
@@ -165,8 +165,8 @@
 		</div>
 		<hr class="strip_hr" style="border-left:1px solid white;margin-left:1px;margin-right:1px;margin-top:auto;margin-bottom:auto">
 		<div class="strip_element">
-			<img class="strip_image" src="./_img/bricks_icon.png" alt="Produse_img"><br>
-			<span class="strip_span_small">Case construite de la zero</span>
+			<img class="strip_image" src="./_img/az_icon.png" alt="Produse_img"><br>
+			<span class="strip_span_small">Lucrari de la A la Z</span>
 		</div>
 	</div>
 </div>
@@ -199,7 +199,7 @@ Slabu Dorin, P.F.A.<br>Site DEV: m.andrei.stefan@gmail.com
 
 <script>
 
-var trigger_once=false;
+var trigger_once=0;
 
 $(".indicator_small" ).click(function() {
    var id = $(this).attr('id');
@@ -228,12 +228,12 @@ $(".indicator_small" ).click(function() {
 	}
    $('div[class~="indicator_inactive"]').css({'background-color':'transparent'});
    $('div[class~="indicator_inactive"]').css({'color':'#333333'});
-   $("#"+future_id).css({'background-color':'#333333'});
-   $("#"+future_id).css({'color':'#f5df4d'});
+   $("#"+future_id).css({'box-shadow': '0 0 10px rgba(11,21,34, 0.9)'});
    window.location.href = "./index.html"+"#"+future_id;
 });
 
 function animateValue(id, start, end, duration) {
+if(trigger_once<3){
     if (start === end) return;
     var range = end - start;
     var current = start;
@@ -247,6 +247,8 @@ function animateValue(id, start, end, duration) {
             clearInterval(timer);
         }
     }, stepTime);
+	trigger_once=trigger_once+1;
+}
 }
 
 $.fn.isOnScreen = function(){
@@ -273,9 +275,9 @@ $.fn.isOnScreen = function(){
 $(document).ready(function(){
 	$(window).scroll(function(){
 		if ($('#strip').isOnScreen()) {
-			 animateValue("years", 1, 20, 3000);
-			 animateValue("houses", 1, 3, 3000);
-			 animateValue("apartments", 1, 3, 3000);
+			 animateValue("years", 0, 20, 1500);
+			 animateValue("houses", 0, 3, 1500);
+			 animateValue("apartments", 0, 3, 1500);
 		} else {
 			
 		}

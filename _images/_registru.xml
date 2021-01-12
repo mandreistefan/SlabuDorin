@@ -1,68 +1,80 @@
 <images>
 	<imagine>
-		<titlu>Dus fara cabina.</titlu>
+		<titlu>Montat cadita dus.</titlu>
 		<subtitlu>Subtitle</subtitlu>
-		<descriere>Montare dus, gresie, scurgeri, gresie si faianta.</descriere>
+		<descriere>Montare cadita de dus, zid de delimitare, gresie si faianta.</descriere>
 		<data_imagine>12.12.12</data_imagine>
 	</imagine>	
 	<imagine>
-		<titlu>Titlu imagine no.2</titlu>
+		<titlu>Cada montata si imbracata.</titlu>
 		<subtitlu>Subtitle</subtitlu>
-		<descriere>Descriere pentru asta</descriere>
+		<descriere>Montat si imbracat cada, montat gresie si faianta</descriere>
 		<data_imagine>12.12.12</data_imagine>
 	</imagine>	
 	<imagine>
-		<titlu>Title</titlu>
+		<titlu>Cada mozaic.</titlu>
 		<subtitlu>Subtitle</subtitlu>
-		<descriere>Un text mai lung care descrie poza asta si are mai multe caractere.</descriere>
+		<descriere>Montat cada de dus si mozaic.</descriere>
 		<data_imagine>12.12.12</data_imagine>
 	</imagine>	
 	<imagine>
-		<titlu>Title</titlu>
+		<titlu>Cadru WC.</titlu>
 		<subtitlu>Subtitle</subtitlu>
-		<descriere>Descriere</descriere>
+		<descriere>Montat si imbracat cadru WC, montat gresie si faianta</descriere>
 		<data_imagine>12.12.12</data_imagine>
 	</imagine>
 	<imagine>
-		<titlu>Titlu custom</titlu>
+		<titlu>Cadita de dus cu geam.</titlu>
 		<subtitlu>Subtitle</subtitlu>
-		<descriere>Descriere pentru aceasta imagine</descriere>
+		<descriere>Montat cadita de dus, montat gresie si faianta, montat geam dus.</descriere>
 		<data_imagine>12.20.12</data_imagine>
 	</imagine>
 	<imagine>
-		<titlu>Titlu custom</titlu>
+		<titlu>Remontaj trepte.</titlu>
 		<subtitlu>Subtitle</subtitlu>
-		<descriere>Descriere pentru aceasta imagine</descriere>
+		<descriere>Demontat trepte, curatat si remontat.</descriere>
 		<data_imagine>12.20.12</data_imagine>
 	</imagine>
 	<imagine>
-		<titlu>Titlu custom</titlu>
+		<titlu>Gresie de metru pe metru.</titlu>
 		<subtitlu>Subtitle</subtitlu>
-		<descriere>Descriere pentru aceasta imagine</descriere>
+		<descriere>Montat gresie de metru pe metru.</descriere>
+		<data_imagine>12.20.12</data_imagine>
+	</imagine>	
+	<imagine>
+		<titlu>Gresie de metru pe metru.</titlu>
+		<subtitlu>Subtitle</subtitlu>
+		<descriere>Montat gresie de metru pe metru.</descriere>
 		<data_imagine>12.20.12</data_imagine>
 	</imagine>
 	<imagine>
-		<titlu>Titlu custom</titlu>
+		<titlu>Baie complet.</titlu>
 		<subtitlu>Subtitle</subtitlu>
-		<descriere>Descriere pentru aceasta imagine</descriere>
+		<descriere>Gresie, faianta, zugravit, montat corpuri sanitare.</descriere>
 		<data_imagine>12.20.12</data_imagine>
 	</imagine>
 	<imagine>
-		<titlu>Titlu custom</titlu>
+		<titlu>Gresie si faianta pe dale de beton.</titlu>
 		<subtitlu>Subtitle</subtitlu>
-		<descriere>Descriere pentru aceasta imagine</descriere>
+		<descriere>Montat gresie si faianta pe dale de beton.</descriere>
+		<data_imagine>12.20.12</data_imagine>
+	</imagine>	
+	<imagine>
+		<titlu>Gresie si faianta pe dale de beton.</titlu>
+		<subtitlu>Subtitle</subtitlu>
+		<descriere>Montat gresie si faianta pe dale de beton.</descriere>
 		<data_imagine>12.20.12</data_imagine>
 	</imagine>
 	<imagine>
-		<titlu>ce vrei tu</titlu>
+		<titlu>Cada montata si imbracata.</titlu>
 		<subtitlu>Subtitle</subtitlu>
-		<descriere>Descriere pentru aceasta imagine</descriere>
-		<data_imagine>12.20.12</data_imagine>
-	</imagine>
+		<descriere>Montat si imbracat cada, montat gresie si faianta.</descriere>
+		<data_imagine>12.12.12</data_imagine>
+	</imagine>	
 	<imagine>
-		<titlu>Scari</titlu>
+		<titlu>Gresie pe scari.</titlu>
 		<subtitlu>Scari</subtitlu>
-		<descriere>O imagine cu scari</descriere>
+		<descriere>Montat gresie pe scari.</descriere>
 		<data_imagine>12.20.12</data_imagine>
 	</imagine>
 </images>
