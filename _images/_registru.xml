@@ -76,5 +76,30 @@
 		<subtitlu>Scari</subtitlu>
 		<descriere>Montat gresie pe scari.</descriere>
 		<data_imagine>12.20.12</data_imagine>
-	</imagine>
+	</imagine>	
+	<imagine>
+		<titlu>Incalzire prin pardoseala.</titlu>
+		<subtitlu>Scari</subtitlu>
+		<descriere>Incalzire pe baza de agent termic.</descriere>
+		<data_imagine>12.20.12</data_imagine>
+	</imagine>	
+	<imagine>
+		<titlu>Incalzire prin pardoseala.</titlu>
+		<subtitlu>Scari</subtitlu>
+		<descriere>Incalzire pe baza de agent termic.</descriere>
+		<data_imagine>12.20.12</data_imagine>
+	</imagine>	
+	<imagine>
+		<titlu>Instalatie electrica.</titlu>
+		<subtitlu>Scari</subtitlu>
+		<descriere>Instalatie electrica casa.</descriere>
+		<data_imagine>12.20.12</data_imagine>
+	</imagine>	
+	<imagine>
+		<titlu>Instalatie electrica.</titlu>
+		<subtitlu>Scari</subtitlu>
+		<descriere>Instalatie electrica casa.</descriere>
+		<data_imagine>12.20.12</data_imagine>
+	</imagine>	
+
 </images>

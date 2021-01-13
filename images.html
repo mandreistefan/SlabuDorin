@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
-  <title>Dorin Slabu</title>
+  <title>Dorin Slabu. Galerie</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./_img/favicon.png" />
+  <meta name="description" content="Renovari interioare - exterioare. Constructii de la zero" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="./_img/favicon.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -14,7 +15,7 @@
 </head>
 
 <html lang="ro">
-	<body onload="load_images(0,10)">
+	<body onload="load_images(0,7)">
 		<div class="navigation">
 		<a href="./index.html" style="text-decoration:none">
 			<div id="logo_image_container">
@@ -48,7 +49,7 @@
 				var container=document.getElementById("galerie");
 				var div, thumbnail, imagine, titlu, descriere;
 				//var image_step=8;
-					if(to>parseInt(images.length)){
+					if(to>=parseInt(images.length)){
 						to=parseInt(images.length);
 						$("#load_more").prop('disabled', true);
 					}
@@ -68,7 +69,8 @@
 						  
 						  imagine = document.createElement("IMG");
 						  imagine.className="custom_image";
-						  imagine.setAttribute("src", "./_images/_"+i+".jpg");
+						  imagine.alt="imagine"+"_"+i;
+						  imagine.setAttribute("src", "./_images_thumb/_"+i+".jpg");
 						  
 						  link.appendChild(imagine);
 					  
@@ -101,7 +103,7 @@
 	
 	$("#load_more").click(function(){
 		var from=$('.custom_image_container').length;
-		var to=from+10;
+		var to=from+5;
 			load_images(from,to);
 	});
 

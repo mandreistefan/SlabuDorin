@@ -65,7 +65,7 @@ html{
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	border:1px solid #333333;
+	border:2px solid #333333;
 }
 
 .h-center{
@@ -156,8 +156,6 @@ html{
 }
 
 #services{
-	padding-left:6rem;
-	padding-right:6rem;
 	display:flex;
 	flex-direction:row;
 	background-color:inherit;
@@ -349,15 +347,17 @@ html{
 	.list_ind{
 		display:none;
 	}
-	
-	.list_ind > .list-custom-item{
-		font-size:.75rem;
-		line-height:1.15;
-	}
 		
 	.list-custom-item{
 		word-break: break-word;
-		line-height:1;
+		line-height:1.2;
+		font-size:1.25rem;
+		font-weight:300;
+	}
+	
+	.fa-check{
+		margin-right:5px;
+		margin-left:5px;
 	}
 	
 	#services{
@@ -384,7 +384,7 @@ html{
 	}
 
 	.ul_big{
-		columns:2;
+		columns:1;
 	}
 
 	.ul_small{
@@ -494,6 +494,19 @@ html{
 		display:none;
 	}
 
+	.list-custom-item{
+		word-break: break-word;
+		line-height:1.2;
+		font-size:1.25rem;
+		font-weight:300;
+		padding-bottom:5px;
+	}
+	
+	.fa-check{
+		margin-right:5px;
+		margin-left:5px;
+	}
+
 	.indicator{
 		display:none;
 	}
@@ -533,7 +546,7 @@ html{
 	}
 	
 	.ul_big{
-		columns:3;
+		columns:2;
 	}
 	
 	#services_head_header, #about_me, #contact_label{
@@ -701,8 +714,21 @@ html{
 		display:none;
 	}
 	
+	.ul_big{
+		columns:3;
+	}
+	
 	.list-custom-item{
-		line-height:1.15;
+		word-break: break-word;
+		line-height:1.2;
+		font-size:1.25rem;
+		font-weight:300;
+		padding-bottom:5px;
+	}
+	
+	.fa-check{
+		margin-right:5px;
+		margin-left:5px;
 	}
 
 	#grafic_element{
@@ -824,12 +850,24 @@ html{
 		display:none;
 	}
 
-	.list-custom-item{
-		font-size:1rem;
-		line-height:1.15;
+	.ul_big{
+		columns:3;
 	}
 
-	#services,#strip,#contact{
+	.list-custom-item{
+		word-break: break-word;
+		line-height:1.2;
+		font-size:1.35rem;
+		font-weight:300;
+		padding-bottom:5px;
+	}
+	
+	.fa-check{
+		margin-right:10px;
+		margin-left:5px;
+	}
+
+	#strip,#contact,#grafic_element{
 		padding-left:3rem;
 		padding-right:3rem;
 	}
@@ -871,8 +909,16 @@ html{
 	}
 
 	.list-custom-item{
-		font-size:1.1rem;
-		line-height:1.15;
+		word-break: break-word;
+		line-height:1.2;
+		font-size:1.25rem;
+		font-weight:300;
+		padding-bottom:5px;
+	}
+	
+	.fa-check{
+		margin-right:5px;
+		margin-left:5px;
 	}
 
 	#services,#strip,#contact{
@@ -985,8 +1031,8 @@ html{
 	#grafic_element{
 		padding-left:2rem;
 		padding-right:2rem;
-		padding-top:4rem;
-		padding-bottom:4rem;
+		padding-top:2rem;
+		padding-bottom:2rem;
 	}
 	
 	.strip_hr{
