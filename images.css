@@ -32,11 +32,71 @@ html{
 	cursor:pointer;
 	transition: 0.2s ease-in-out;
 	transform: translateZ(0);
-	animation-name: cf3FadeInOut;
 }
 
 .custom_image_container:hover{
 	box-shadow: 1px 1px 6px #adb5bd,-1px -1px 6px #adb5bd;
+}
+
+.modal-content, #modal_caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+
+.modalCustom {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  padding-bottom: 50px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%!important;
+  max-width: 700px !important;
+}
+
+#modal_caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .image_link{
@@ -136,6 +196,10 @@ p,h4{
 	p,h4{
 		margin-bottom:0;
 	}
+	
+	.modal-content {
+		width: 100%;
+	}
 
 }
 
@@ -171,7 +235,7 @@ p,h4{
 	.custom_image_container{
 
 	}
-	
+
 	
 	#container_custom{
 		padding-left:5px;
@@ -193,6 +257,10 @@ p,h4{
 
 	p,h4{
 		margin-bottom:0;
+	}
+
+	.modal-content {
+		width: 100%;
 	}
 
 }

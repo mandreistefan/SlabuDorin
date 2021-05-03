@@ -11,20 +11,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="images.css">
-  <link rel="stylesheet" href="navigation_lite.css">
+  <link rel="stylesheet" href="navigation.css">
 </head>
 
 <html lang="ro">
-	<body onload="load_images(0,7)">
+	<body onload="load_images(0)">
 		<div class="navigation">
-		<a href="./index.html" style="text-decoration:none">
-			<div id="logo_image_container">
-				<img id="jumbotron_logo" src="./_img/logo.png" alt="Produse_img">
-				<div style="">
-					<span id="logo_container_header">Dorin Slabu</span><br>					
-				</div>
-			</div>	
-		</a>
+		<span id="logo_container_span"><a href="./index.html" style="text-decoration:none"><span id="logo_container_header_mobile" style="font-weight:600;font-size:1.5rem">Dorin Slabu</span></a><br>Renovari interioare - exterioare. Constructii de la zero</span>
+		<div id="button_container">
+			<a class="btn  btn_custom desktop_button" id="contact_button" href="./index.html#contact" role="button"><i class="fa fa-phone"></i> Contact</a>
+			<a class="btn  btn_custom desktop_button" id="about_button" href="./index.html#about_me" role="button"><i class="fa fa-user"></i> Despre mine</a>
+		</div>
 		</div>
 		<div id="container_custom">
 			<div class="galerie" id="galerie">
@@ -34,11 +31,30 @@
 				<button type="button" id="load_more" class="btn btn-dark">Mai multe imagini</button>	
 			</div>
 		</div>
+		
+		<!--Modal-->
+		<div id="myModal" class="modal modalCustom">
+			<!-- Modal close button -->
+			<span class="close">&times;</span>
+			<!-- Modal image -->
+			<img class="modal-content" id="modal_image">
+			<!-- Modal caption -->
+			<div id="modal_caption"></div>
+		</div>
+		
 	</body>	
 </html>
 
+<style>
+
+</style>
+
 <script>
-	function load_images(from,to){
+
+	var image_step=7;
+
+	function load_images(from){
+		var count=0;
 		var xhttp = new XMLHttpRequest();
 		xhttp.open("GET", "./_images/_registru.xml", true);
 		xhttp.send();
@@ -46,14 +62,14 @@
 			if (xhttp.readyState == 4 && xhttp.status == 200) {
 				var xmlDoc = xhttp.responseXML;
 				var images = xmlDoc.getElementsByTagName("imagine");
+				var no_of_images = xmlDoc.getElementsByTagName("no")[0].childNodes[0].nodeValue;
 				var container=document.getElementById("galerie");
 				var div, thumbnail, imagine, titlu, descriere;
-				//var image_step=8;
-					if(to>=parseInt(images.length)){
+					/*if(to>=parseInt(images.length)){
 						to=parseInt(images.length);
 						$("#load_more").prop('disabled', true);
-					}
-					for(var i=from;i<to;i++){
+					}*/
+					for(var i=no_of_images-from;i>-1;i--){
 						  div = document.createElement('div');
 						  div.className="custom_image_container";
 
@@ -61,24 +77,26 @@
 						  thumbnail.className="custom-thumbnail";
 						  div.appendChild(thumbnail);
 						  
-						  link=document.createElement('A');
+						  /*link=document.createElement('A');
 						  link.setAttribute('href', "./_images/_"+i+".jpg");
 						  link.setAttribute('target', "_blank");
 						  link.className="image_link";
-						  thumbnail.appendChild(link);
+						  thumbnail.appendChild(link);*/
 						  
 						  imagine = document.createElement("IMG");
 						  imagine.className="custom_image";
 						  imagine.alt="imagine"+"_"+i;
 						  imagine.setAttribute("src", "./_images_thumb/_"+i+".jpg");
+						  imagine.setAttribute("id", i);
 						  
-						  link.appendChild(imagine);
+						  thumbnail.appendChild(imagine);
 					  
 						  titlu = document.createElement("h4");
 						  titlu.innerText = images[i].getElementsByTagName("titlu")[0].childNodes[0].nodeValue;
 						 						  
 						  descriere = document.createElement("p");
 						  descriere.innerText = images[i].getElementsByTagName("descriere")[0].childNodes[0].nodeValue;
+						  imagine.setAttribute("alt", descriere.innerText);
 						  
 						  spanul = document.createElement("span");
 						  spanul.className="short_descr";
@@ -88,6 +106,15 @@
 						  div.appendChild(spanul);
 						  
 						  document.getElementById("galerie").appendChild(div);
+						  
+						  if(i==0)
+						  {
+							$("#load_more").prop('disabled', true);
+						  }
+						  
+						  
+						  count=count+1;
+						  if(count==image_step) break;
 					}	
 					setTimeout(function(){
 						$(".short_descr").css("opacity","1");
@@ -103,8 +130,28 @@
 	
 	$("#load_more").click(function(){
 		var from=$('.custom_image_container').length;
-		var to=from+5;
-			load_images(from,to);
+		load_images(from);
+	});
+
+	//trigger the event when a gallery custom_image element is clicked
+	$("#galerie").on('click', '.custom_image', function(){
+		//modal
+		var modal = document.getElementById("myModal");
+		var modalImg = document.getElementById("modal_image");
+		var captionText = document.getElementById("modal_caption");
+		modal.style.display = "block";
+		modalImg.src = "./_images/_"+this.id+".jpg";
+		captionText.innerHTML = this.alt;
+	
+		//hide the navbar when the modal is opened
+		document.body.style.overflow = "hidden";
+
+		// the close button
+		var span = document.getElementsByClassName("close")[0];
+		span.onclick = function() {
+		  modal.style.display = "none";
+		  document.body.style.overflow = "initial";
+		}
 	});
 
 	
