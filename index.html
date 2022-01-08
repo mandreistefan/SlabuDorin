@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Dorin Slabu. Pagina principala</title>
+  <title>DorinSlabu, mester local</title>
   <link rel="shortcut icon" type="image/x-icon" href="./_img/favicon.png" />
   <meta name="description" content="Renovari interioare - exterioare. Constructii de la zero" />
   <meta charset="utf-8">
@@ -8,6 +8,7 @@
   <meta name="google-site-verification" content="tEacoSeDaS8gZA8mia39qx9dC32F4IrNcMjHbixKg1Q" />
  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -20,253 +21,211 @@
 <body>
 
 <div class="navigation">
-
-	<span id="logo_container_span"><a href="./index.html" style="text-decoration:none"><span id="logo_container_header_mobile" style="font-weight:600;font-size:1.5rem">Dorin Slabu</span></a><br>Renovari interioare - exterioare. Constructii de la zero</span>
+	<div id="container_nav_text">
+		<span id="logo_text_container">
+			<a href="./index.html" style="text-decoration:none"><span id="big_text">Dorin<br>Slabu</span></a>
+		</span>
+		<hr id="logo_hr">
+		<span id="small_text">Mester <br>liber profesionist</span>
+	</div>
 	<div id="button_container">
-		<a class="btn  btn_custom desktop_button" id="contact_button" href="#contact" role="button"><i class="fa fa-phone"></i> Contact</a>
-		<a class="btn  btn_custom desktop_button" id="about_button" href="#about_me" role="button"><i class="fa fa-user"></i> Despre mine</a>
-		<a class="btn  btn_custom desktop_button" href="./images.html" id="gallery_button" role="button"><i class="fa fa-file-image-o"></i> Galerie</a>
+		<a class="navigation_button navigation_mobile" id="contact_button" href="#container_contact">Contact</a>
+		<a class="navigation_button" id="gallery_button"   href="./images.html" role="button">Galerie</a>
 	</div>
 </div>
-	<div class="main_content" style="background-color:#f8f8ff;color:#333333" id="content">
-		<span id="services_head_header">Serviciile mele</span>
-		<div class="element" id="grafic_element" style="width:100%;position:relative">
-				<div class="image_container" style="position:relative">
-					<img class="image_big" src="./_img/that_big_thing2.png" alt="main_image">
+<div id="container_despre">
+	<div id="container_despre_1">	
+		<!--<h1 class="header">Despre mine</h1>	-->	
+		<span class="bix-text" style="line-height:1.5rem;">Mester liber profesionist din Targu Ocna, cu <span style="font-weight:500;color:#145DA0">experienta de peste 30 de ani</span>, din care jumatate in strainatate, ofer servicii de amenajari exterioare si finisaje interioare.</span><br><br><br>
+		
+		<table id="tabel_despre_mobile" style="margin-bottom:10px">
+			<tr style="text-align:center">
+				<th class="tabel_despre_header" style="padding-left:5px;padding-right:5px;">
+				<span class="material-icons">home</span>
+				<span class="material-icons">home</span>
+				<span class="material-icons">home</span>
+				</th>
+				<th id="years" style="padding-left:5px;padding-right:5px;">30</th>
+				<th class="tabel_despre_header" style="padding-left:5px;padding-right:5px;">
+				<span class="material-icons">apartment</span>
+				<span class="material-icons">apartment</span>
+				<span class="material-icons">apartment</span>
+				</th>
+			</tr>
+			<tr style="text-align:center">
+				<td><span style="padding-left:5px;padding-right:5px;display:flex;justify-content:center;align-items:center;text-align:center;font-size:16px;line-height:1rem;font-weight:500">Trei case construite<br> de la zero</span></td>
+				<td><span style="padding-left:5px;padding-right:5px;display:flex;justify-content:center;align-items:center;text-align:center;font-size:16px;line-height:1rem;font-weight:500">30 de ani de experienta<br> in domeniu</span></td>
+				<td><span style="padding-left:5px;padding-right:5px;display:flex;justify-content:center;align-items:center;text-align:center;font-size:16px;line-height:1rem;font-weight:500">Trei apartamente<br> renovate complet</span></td>
+			</tr>
+		</table>
+		
+		<span style="font-size:21px;font-weight:400;box-decoration-break: clone;-webkit-box-decoration-break: clone;line-height:30px;">Serviciile oferite de mine includ, dar nu se limiteaza la: zugravit (cu lavabila, decorativa, montaj tapet), parchet (inclusiv reconditionat, unde se cere), placari ceramice si rigips, montarea instalatiilor termice, a podelelor, instalatii electrice, instalatii sanitare precum si alte lucrari de montaj. <a href="#container_servicii">Click aici pentru lista completa de servicii.</a>  Lucrez curat si ma pot ocupa de achizitionarea si transportul materialelor pentru lucrarea contractata.</span>
+		<br><br><span style="font-size:21px;font-weight:400;box-decoration-break: clone;-webkit-box-decoration-break: clone;line-height:30px;color:#145DA0;font-weight:500;">Pentru mai multe detalii, contactati-ma:</span>
+		<div class="contact-element-container" style="color:black;width:100%"><span style="display:flex;align-items:center;margin-bottom:5px;font-size:21px;"><span class="material-icons" style="font-size:1.5rem">phone</span>Telefon/ Whatsapp: 0729578894</span><span style="display:flex;align-items:center;margin-bottom:5px;font-size:21px;"><span class="material-icons" style="font-size:1.5rem">mail</span>Email: slabudorin@gmail.com</span></div>
+	</div>
+	<div id="container_despre_2">
+		<table id="tabel_despre">
+		  <tr>
+			<th id="years">30</th>
+			<th class="tabel_despre_header">
+				<span class="material-icons">home</span>
+				<span class="material-icons">home</span>
+				<span class="material-icons">home</span>
+			</th>
+			<th class="tabel_despre_header">
+				<span class="material-icons">apartment</span>
+				<span class="material-icons">apartment</span>
+				<span class="material-icons">apartment</span>
+			</th>
+		  </tr>
+		  <tr>
+			<td><span style="display:flex;justify-content:center;align-items:center;text-align:center;font-size:16px;line-height:1rem;font-weight:500">30 de ani de experienta<br> in domeniu</span></td>
+			<td><span style="display:flex;justify-content:center;align-items:center;text-align:center;font-size:16px;line-height:1rem;font-weight:500">Trei case construite<br> de la zero</span></td>
+			<td><span style="display:flex;justify-content:center;align-items:center;text-align:center;font-size:16px;line-height:1rem;font-weight:500">Trei apartamente<br> renovate complet</span></td>
+		  </tr>
+		</table>
+	</div>
+</div>
+<div id="carousel-container">
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img class="d-block w-100" src="./_images/carousel1.jpg" alt="First slide">
+		</div>
+		<div class="carousel-item">
+		  <img class="d-block w-100" src="./_images/carousel2.jpg" alt="Second slide">
+		</div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	  </a>
+	</div>
+</div>
 
-					<div id="small_nav_heat" class="small_navigation_indicator"><div id="indic_heat" class="indicator_small">1</div><span style="margin-right:3px">Instalatii termice</span></div>
-					<div id="small_nav_floor" class="small_navigation_indicator"><div id="indic_floor" class="indicator_small">2</div><span style="margin-right:3px">Podele</span></div>
-					<div id="small_nav_wall" class="small_navigation_indicator"><div id="indic_wall" class="indicator_small">3</div><span style="margin-right:3px">Pereti</span></div>
-					<div id="small_nav_lights" class="small_navigation_indicator"><div id="indic_lights" class="indicator_small">4</div><span style="margin-right:3px">Instalatii electrice</span></div>
-					<div id="small_nav_sanit" class="small_navigation_indicator"><span id="indic_sanit" style="margin-left:3px">Instalatii sanitare</span><div id="indic_sanit" style="margin:0;margin-left:5px" class="indicator_small">5</div></div>
-					<div id="small_nav_tiles" class="small_navigation_indicator"><span  style="margin-left:3px">Gresie si faianta</span><div id="indic_tiles" style="margin:0;margin-left:5px" class="indicator_small">6</div></div>
-				</div>
-
-				<div class="element" id="services">			
-					<div id="services_list">
-						<ul class="ul_big">
-							<ul class="ul_small">
-								<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-									<div class="indicator_inactive" id="instalatii_termice" style="position:relative">1</div>
-									<h5 class="h-center">Instalatii termice.</h5>
-								</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Montarea centralei termice.</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Montarea caloriferelor.</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Montarea instalatiilor de cupru.</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Incalzire prin pardoseala.</li>
-							</ul>
-							<ul class="ul_small">
-								<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-									<div class="indicator_inactive"  id="podele" style="position:relative">2</div>
-									<h5 class="h-center">Podele.</h5>
-								</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i> Montaj parchet si plinta</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i> Montaj mocheta</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i> Montaj linoleum</li>
-							</ul>
-							<ul class="ul_small"> 
-								<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-									<div class="indicator_inactive" id="pereti" style="position:relative">3</div> 
-									<h5 class="h-center">Varuire si vopsire.</h5>
-								</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i> Gleturie, varuire si vopsire</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i> Tapetare</li>
-							</ul>
-							<ul class="ul_small">
-								<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-									<div class="indicator_inactive" id="instalatii_electrice" style="position:relative">4</div>
-									<h5 class="h-center">Instalatii electrice.</h5>
-								</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i> Instalatii electrice.</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i> Montaj corpuri de iluminat si intrerupatoare(clasic, cap-scara, cruce).</li>
-							</ul>
-							<ul class="ul_small">
-								<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-									<div class="indicator_inactive" id="instalatii_sanitare" style="position:relative">5</div>
-									<h5 class="h-center">Instalatii sanitare.</h5>
-								</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Montarea corpurilor sanitare(chiuveta, WC, bideu, etc.).</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Montarea dusului(cu cabina de dus sau fara cabina de dus).</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Montarea scurgerilor PVC.</li>
-							</ul>
-							<ul class="ul_small">
-								<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-									<div class="indicator_inactive" id="gresie_faianta" style="position:relative">6</div>
-									<h5 class="h-center">Gresie si faianta.</h5>
-								</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Montarea gresiei</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Montarea faiantei</li>
-							</ul>
-							<ul class="ul_small">
-								<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-									<div class="indicator_inactive" id="ext_inactive" style="position:relative">+</div>
-									<h5 class="h-center">Exterioare.</h5>
-								</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Montare de borduri si pavele</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Fatade exterioare, montare lambriu, tencuieli decorative</li>
-								<li class="list-custom-item"><i class="fa fa-check"></i>Izolatie exterioara(polistiren/ vata minerala)</li>
-							</ul>
-							<ul class="ul_small">
-								<li class="list-custom-item list-custom-item-header" style="display:flex;justify-content:flex-start">
-									<div class="indicator_inactive" id="extra_inactive" style="position:relative">?</div>
-									<h5 class="h-center">Cauti ceva ce nu e in lista?<br><a style="color:#333333" href="">Contacteaza-ma.</a></h5>
-								</li>
-							</ul>
-						</ul>			
-					</div>
-				</div>
+<div id="container_servicii">
+	<span class="big-text">Lista servicii:</span><br>
+	<ul class="ul_big">
+		<ul class="ul_small" >
+			<div><img src="./_img/heat_icon.svg" alt="instalatii_termice" class="servicii-icon"></div>
+			<div class="serviciu-container">
+				<span class="serviciu-span-big">Instalatii termice</span>
+				<span class="serviciu-span-small">Montarea centralei termice, a caloriferelor si instalatiilor de cupru.</span>
+				<span class="serviciu-span-small">Instalare de instalatii de incalzire prin pardoseala</span>
 			</div>
-	</div>
-<div id="about_me">Despre mine</div>		
-<div id="strip">
-	<div class="strip_element_container">
-		<div class="strip_element">
-			<h1 class="strip_element_header" style="font-size:4rem;" id="years">20</h1>
-			<span class="strip_span_small">ani de experienta in domeniu</span>
-		</div>
-		<hr class="strip_hr" style="border-left:1px solid white;margin-left:1px;margin-right:1px;margin-top:auto;margin-bottom:auto">
-		<div class="strip_element">
-			<h1 style="font-size:4rem;" class="strip_element_header" id="houses">3</h1>
-			<span class="strip_span_small">case construite de la zero</span>
-		</div>
-		<hr class="strip_hr" style="border-left:1px solid white;margin-left:1px;margin-right:1px;margin-top:auto;margin-bottom:auto">
-		<div class="strip_element">
-			<h1 style="font-size:4rem;" class="strip_element_header" id="apartments">3</h1>
-			<span class="strip_span_small">apartamente renovate complet</span>
-		</div>
-	</div>
-	<div class="strip_element_container">
-		<div class="strip_element">
-			<img class="strip_image" src="./_img/pfa_icon.png" alt="pfa_icon"><br>	
-			<span class="strip_span_small">Persoana fizica autorizata</span>
-		</div>
-		<hr class="strip_hr" style="border-left:1px solid white;margin-left:1px;margin-right:1px;margin-top:auto;margin-bottom:auto">
-		<div class="strip_element">
-			<img class="strip_image" src="./_img/lightbulb_icon.png" alt="lightbulb_icon"><br>	
-			<span class="strip_span_small">Calificare instalatii electrice</span>
-		</div>
-		<hr class="strip_hr" style="border-left:1px solid white;margin-left:1px;margin-right:1px;margin-top:auto;margin-bottom:auto">
-		<div class="strip_element">
-			<img class="strip_image" src="./_img/az_icon.png" alt="a_to_z_icon"><br>
-			<span class="strip_span_small">Lucrari de la A la Z</span>
-		</div>
-	</div>
+		</ul>
+		<ul class="ul_small">
+			<div><img src="./_img/plumbing_icon.svg" alt="instalatii_sanitare" class="servicii-icon"></div>
+			<div class="serviciu-container">
+				<span class="serviciu-span-big">Instalatii sanitare</span>
+				<span class="serviciu-span-small">Montarea corpurilor sanitare(chiuveta, WC, bideu, etc.) si a dusurilor(cu sau fara cabina de dus)</span>
+				<span class="serviciu-span-small">Montarea scurgerilor PVC</span>
+			</div>
+		</ul>	
+		<ul class="ul_small">
+			<div><img src="./_img/electrical_icon.svg" alt="instalatii_electrice" class="servicii-icon"></div>
+			<div class="serviciu-container">
+				<span class="serviciu-span-big">Instalatii electrice</span>
+				<span class="serviciu-span-small">Montaj corpuri de iluminat, intrerupatoare(clasic, cap-scara, cruce) si prize</span>
+			</div>
+		</ul>		
+		<ul class="ul_small">
+			<div><img src="./_img/wall_icon.svg" alt="varuire_vopsire" class="servicii-icon"></div>
+			<div class="serviciu-container">
+				<span class="serviciu-span-big">Varuire si vopsire</span>
+				<span class="serviciu-span-small">Gleturie, varuire si vopsire a peretilor</span>
+				<span class="serviciu-span-small">Tapetare</span>
+			</div>
+		</ul>
+		<ul class="ul_small">
+			<div><img src="./_img/floor_icon.svg" alt="pardoseli" class="servicii-icon"></div>
+			<div class="serviciu-container">
+				<span class="serviciu-span-big">Pardoseala</span>
+				<span class="serviciu-span-small">Montare parchet, plinta, mocheta, linoleum.</span><br>
+			</div>
+		</ul>	
+
+		<ul class="ul_small">
+			<div><img src="./_img/tile_icon.svg" alt="gresie_faianta" class="servicii-icon"></div>
+			<div class="serviciu-container">
+				<span class="serviciu-span-big">Gresie si faianta</span>
+				<span class="serviciu-span-small">Montare gresie si faianta</span><br>
+			</div>
+		</ul>				
+
+		<ul class="ul_small">
+			<div><img src="./_img/pavement_icon.svg" alt="pavaj" class="servicii-icon"></div>
+			<div class="serviciu-container">
+				<span class="serviciu-span-big">Pavaj</span>
+				<span class="serviciu-span-small">Montare de borduri si pavele</span><br>
+			</div>
+		</ul>
+
+		<ul class="ul_small">
+			<div><img src="./_img/exterior_icon.svg" alt="exterioare" class="servicii-icon"></div>
+			<div class="serviciu-container">
+				<span class="serviciu-span-big">Exterioare</span>
+				<span class="serviciu-span-small">Fatade exterioare, montare lambriu, tencuieli decorative<span>
+				<span class="serviciu-span-small">Izolatie exterioara(polistiren/ vata minerala)</span>
+			</div>
+		</ul>	
+
+		<ul class="ul_small">
+			<div><img src="./_img/roof_icon.svg" alt="acoperisuri" class="servicii-icon"></div>
+			<div class="serviciu-container">
+				<span class="serviciu-span-big">Acoperis</span>
+				<span class="serviciu-span-small">Montaj tigle</span><br>
+			</div>
+		</ul>			
+	</ul>	
 </div>
 
-<div id="contact_label">Contact</div>		
-<div id="contact">
-		<div class="contact_element" style="text-align:right;width:50%;padding-right:1rem;">
-			<li class="contact_list_element"><span class="logo_container_span">Adresa </span><i class="fa fa-map-marker"></i></li>
-			<li class="contact_list_element" style="font-weight:300">Targu Ocna, Bacau</li>
-			<li class="contact_list_element" style="font-weight:300">Romania</li>
+<div id="container_contact">
+	<div class="contact_element" id="telefon_email">
+		<div class="contact-element-container">
+			<span class="serviciu-span-small" style="display:flex;align-items:center;margin-bottom:5px"><span class="material-icons" style="font-size:1.5rem">phone</span>Telefon/ Whatsapp: <span class="serviciu-span-small" >0729578894</span></span>
 		</div>
-		<hr style="border-left:1px solid white;height:100px;margin-left:1px;margin-right:1px">
-		<div class="contact_element" style="padding-left:1rem">
-			<li class="contact_list_element">
-				<i class="fa fa-phone"></i> <span class="logo_container_span">Telefon: </span> <span style="font-weight:300">0729578894</span>
-			</li>
-			<li class="contact_list_element">
-				<i class="fa fa-whatsapp"></i> <span class="logo_container_span">WhatsApp: </span> <span style="font-weight:300">0729578894</span>
-			</li>
-			<li class="contact_list_element">
-				<i class="fa fa-envelope-o"></i> <span class="logo_container_span">Email: </span><span style="font-weight:300;word-break:break-all">slabudorin@gmail.com</span>
-			</li>
+		<div class="contact-element-container">
+			<span class="serviciu-span-small" style="display:flex;align-items:center;;margin-bottom:5px"><span class="material-icons" style="font-size:1.5rem">email</span>Email: <span class="serviciu-span-small" >slabudorin@gmail.com</span></span>
 		</div>
+		<div class="contact-element-container">
+			<span class="serviciu-span-small" style="display:flex;align-items:center;margin-bottom:5px"><span class="material-icons" style="font-size:1.5rem">link</span>Mesteri locali: <span class="serviciu-span-small" ><span class="contact_text"><a href=https://mesterilocali.ro/mesteri/mesteri-targu-ocna-dorin-slabu>mesterilocali.ro</a></span></span></span>
+		</div>
+	</div>
 </div>
-<div class="footer" style="background-color:#333333;color:white;padding:10px;text-align:center;width:100%">
-Slabu Dorin, P.F.A.<br>
-</div>	
 </body>
 </html>
 
 <script>
 
-var trigger_once=0;
-
-$(".indicator_small" ).click(function() {
-   var id = $(this).attr('id');
-   var future_id;
-   switch(id) {
-	  case "indic_heat":
-			future_id="instalatii_termice";
-		break;
-	  case "indic_floor":
-			future_id="podele";
-		break;
-		case "indic_wall":
-			future_id="pereti";
-		break;	
-		case "indic_lights":
-			future_id="instalatii_electrice";
-		break;
-		case "indic_sanit":
-			future_id="instalatii_sanitare";
-		break;	
-		case "indic_tiles":
-			future_id="gresie_faianta";
-		break;
-	  default:
-		
+function animateValue() {		
+		let target=document.getElementById("years");
+		let start=0;
+		let end=parseInt(target.innerHTML);
+		if (start === end) return;
+		let range = end - start;
+		let current = start;
+		let increment = end > start? 1 : -1;
+		let stepTime = Math.abs(Math.floor(3000 / range));
+		var timer = setInterval(function() {
+			current += increment;
+			target.innerHTML = current;
+			if (current == end) {
+				clearInterval(timer);
+			}
+		}, stepTime);
 	}
-   //$('div[class~="indicator_inactive"]').css({'background-color':'transparent'});
-   //$('div[class~="indicator_inactive"]').css({'color':'#333333'});
-   //$("#"+future_id).css({'box-shadow': '0 0 10px rgba(11,21,34, 0.9)'});
-   window.location.href = "./index.html"+"#"+future_id;
-});
 
-function animateValue(id, start, end, duration) {
-if(trigger_once<3){
-    if (start === end) return;
-    var range = end - start;
-    var current = start;
-    var increment = end > start? 1 : -1;
-    var stepTime = Math.abs(Math.floor(duration / range));
-    var obj = document.getElementById(id);
-    var timer = setInterval(function() {
-        current += increment;
-        obj.innerHTML = current;
-        if (current == end) {
-            clearInterval(timer);
-        }
-    }, stepTime);
-	trigger_once=trigger_once+1;
-}
-}
-
-$.fn.isOnScreen = function(){
-
-    var win = $(window);
-
-    var viewport = {
-        top : win.scrollTop(),
-        left : win.scrollLeft()
-    };
-    viewport.right = viewport.left + win.width();
-    viewport.bottom = viewport.top + win.height();
-
-    var bounds = this.offset();
-    bounds.right = bounds.left + this.outerWidth();
-    bounds.bottom = bounds.top + this.outerHeight();
-
-    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
-
-};
-
-
-
-$(document).ready(function(){
-	$(window).scroll(function(){
-		if ($('#strip').isOnScreen()) {
-			 animateValue("years", 0, 20, 1500);
-			 animateValue("houses", 0, 3, 1500);
-			 animateValue("apartments", 0, 3, 1500);
-		} else {
-			
-		}
+	$(document).ready(function(){
+		animateValue();	
+		$('.carousel').carousel({
+			interval: 3000
+		})	
 	});
-
-});
-
-
+	
 </script>
 

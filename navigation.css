@@ -1,282 +1,147 @@
-.desktop_button{
-	display:inline-block;
-}
-
-.mobile_button{
-	display:none;
-}
-
-.mobile_hr{
-	display:none;
-}
-
 .navigation{
 	width:100%;
-	display:inline-block;
-	background-color:#333333;
+	background-color:#0A0A0A;
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-left:10px;
-	padding-right:10px;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:50px;
+	padding-right:50px;
 	align-items:center;
 }
 
-#logo_container{
-	background-color:#333333;
+#container_nav_text{
 	display:flex;
 	flex-direction:row;
-	align-items:center
+	width:250px;
 }
 
-#logo_container_span{
+#logo_text_container{
 	text-align:left;
 	color:white;
 	font-size:.85rem;
 	font-weight:300;
-}
-
-#logo_image_container{
 	display:flex;
-	flex-direction:row;
 	align-items:center;
-	height:auto;
 }
 
-#logo_image_container:hover #jumbotron_logo{
-	transform: scale(1.1);
+#big_text{
+	font-weight:600;
+	font-size:20px;
+	line-height:1em;
+	color:white;
 }
 
-#jumbotron_logo_container{
-	display:flex;
-	flex-direction:row; 
+#small_text{
+	color:white;
+	display:inherit;
 	align-items:center;
-}	
-
-#jumbotron_logo{
-	width:50px;
-	height:50px;
-	transition: 0.3s ease-in-out;
-}
-
-#logo_container_header{
-	color:white;
-	font-size:1.25rem;
 	font-weight:400;
-}
-
-#logo_container_header_mobile{
-	color:white;
-	font-size:1rem;
-	font-weight:400;
-}
-
-.jumbotron_contact_list_element{
-	display:none;
+	font-size:16px;
+	line-height:1.25em;
 }
 
 #button_container{
-	width:auto;
-	display:inline;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
 }
 
-.btn_custom{
-	border:0;
-	font-size:1.25rem;
+.navigation_button{
+	text-decoration:none;
 	color:white;
-	transition: text-shadow 0.3s ease-in-out;
+	font-weight:400;
+	font-size:16px;
+	line-height:1.25em;
+	padding-left:10px;
+	padding-right:10px;
+}	
+
+.navigation_button:hover{
+	text-decoration:none;
 }
 
-.btn_custom:hover{
-	color:white;
-	text-shadow: 0 0 5px white;
+#logo_hr{
+	height:30px;
+	border-left:2px solid #0D698B;
+	margin-left:10px;
+	margin-right:10px;
 }
 
-#gallery_button{
-	color:#f1faee;
-}
-
-#gallery_button:hover{
-	color:#f1faee;
-	text-shadow: 0 0 5px #f1faee;
-}
-
-#see_more{
-	display:none;
-}
-
-#mobile_hr{
-	display:none;
-}
-
-.fa-home{
+.navigation_mobile{
 	display:none;
 }
 
 @media screen and (max-width: 576px){
-		
-	#logo_container_header{
-		display:none;
-	}		
-		
-	.mobile_button{
-		display:inline-block;
+	
+	.navigation{
+		padding-left:10px;
+		padding-right:10px;		
+		padding-top:10px;		
+		padding-bottom:10px;		
 	}
 	
-	.mobile_hr{
+	#big_text br{
+		display:none;
+	}
+	
+	#big_text{
+		font-size:14px;
+	}
+
+	#small_text br{
+		display:none
+	}
+	
+	#small_text{
+		font-size:14px;
+	}
+	
+	#container_nav_text{
+		justify-content:center;
+		flex-direction:column;
+		width:100%;
+		height:40px;
+	}
+		
+	#logo_hr{
+		height:16px;
+		margin-top:auto;
+		margin-bottom:auto;
+	}
+	
+	.navigation_mobile{
 		display:block;
 	}
 	
+	#logo_hr{
+		display:none;
+	}
+	
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
 	.navigation{
-		flex-direction:column;
-		justify-content:flex-start;
-	}
-		
-	#logo_container{
-		flex-direction:row;
-		padding-left:1.25rem;
-		padding-right:1.25rem;
-	}
-	
-	#home_link{
-		width:25%;
-		padding-left:5px;
-		padding-right:5px;
-	}
-	
-	#logo_image_container{
-		align-items:center;
-		justify-content:center;
-	}
-	
-	#jumbotron_logo{
-		width:35px;
-		height:35px;
-	}
-	
-	#logo_header_text_container{
-		text-align:center;
-	}
-	
-	#logo_container_span_small{
-		display:none;
-	}
-	
-	#logo_text_container{
-		background-color:#1D3557;
-	}
-	
-	.logo_container_span{
-		font-weight:600;
-	}
-	
-	.fa-home{
-		display:inline;
-	}
-	
-	.jumbotron_contact_list_element{
-		display:inline-block;
-		display:none;
-		color:white;
-		margin-bottom:0;
-		padding-left:0;
-		height:auto;
-		width:100%;
-		text-align:center;
-		margin-left:0;
-	}
-	
-	.desktop_button{
-		width:33.3%;
-		font-size:1rem;
-		padding-left:5px;
-		padding-right:5px;
-	}
-	
-	#button_container{
-		margin-left:5px;
-		margin-right:5px;
-		width:100%;
-		display:flex;
-		flex-direction:row;
-	}
-	
-	#see_more{
-		display:inline-block;
-	}
-	
-	.btn_custom{
-		width:33.3%;
-		margin-bottom:5px;
-		margin-top:5px;
-		height:30px;
-		border-top:0;
-		border-left:0;
-		border-right:0;
-		border-radius:0;
+		padding-left:20px;
+		padding-right:20px;
 	}
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px){
-
-	#logo_container_header{
-		display:none;
+@media screen and (min-width: 768px) and (max-width: 992px){
+	.navigation{
+		padding-left:20px;
+		padding-right:20px;
 	}
-
-	#logo_container{
-		width:30%;
-	}
-
-	#logo_image_container{
-		width:30%;
-		align-items:center;
-		justify-content:center;
-	}
-
-	#logo_header_text_container{
-		text-align:center;
-	}
-
-
-	#jumbotron_logo_container{
-		display:flex;
-		flex-direction:row; 
-		align-items:center;
-	}	
-
-	#jumbotron_logo{
-		width:50px;
-		height:50px;
-		transition: 0.3s ease-in-out;
-	}
-
-	#logo_container_header{
-		color:#f1faee;
-		font-size:1.25rem;
-		font-weight:400;
-	}
-
-	#logo_container_span_small{
-		display:none;
-	}
-	
-	#button_container{
-		width:70%;
-		display:flex;
-		justify-content:flex-end;
-	}
-	
-	.btn_custom{
-		font-size:1.25rem;
-		float:left;
-	}
-	
-	#home_link{
-		width:40%;
-	}
-	
-	
-
 }
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	.navigation{
+		padding-left:20px;
+		padding-right:20px;
+	}
+}
+
+
+

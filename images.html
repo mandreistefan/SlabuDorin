@@ -17,15 +17,19 @@
 <html lang="ro">
 	<body onload="load_images(0)">
 		<div class="navigation">
-		<span id="logo_container_span"><a href="./index.html" style="text-decoration:none"><span id="logo_container_header_mobile" style="font-weight:600;font-size:1.5rem">Dorin Slabu</span></a><br>Renovari interioare - exterioare. Constructii de la zero</span>
-		<div id="button_container">
-			<a class="btn  btn_custom desktop_button" id="contact_button" href="./index.html#contact" role="button"><i class="fa fa-phone"></i> Contact</a>
-			<a class="btn  btn_custom desktop_button" id="about_button" href="./index.html#about_me" role="button"><i class="fa fa-user"></i> Despre mine</a>
+			<div id="container_nav_text">
+				<span id="logo_text_container">
+					<a href="./index.html" style="text-decoration:none"><span id="big_text">Dorin<br>Slabu</span></a>
+				</span>
+				<hr id="logo_hr">
+				<span id="small_text">Mester <br>liber profesionist</span>
+			</div>
+			<div id="button_container">
+			</div>
 		</div>
-		</div>
+
 		<div id="container_custom">
 			<div class="galerie" id="galerie">
-
 			</div>
 			<div id="load_more_container">
 				<button type="button" id="load_more" class="btn btn-dark">Mai multe imagini</button>	
@@ -51,9 +55,11 @@
 
 <script>
 
-	var image_step=7;
+	var image_step=9;
 
 	function load_images(from){
+		var currentDiv;
+		var currentDivId=0;	
 		var count=0;
 		var xhttp = new XMLHttpRequest();
 		xhttp.open("GET", "./_images/_registru.xml", true);
@@ -63,63 +69,50 @@
 				var xmlDoc = xhttp.responseXML;
 				var images = xmlDoc.getElementsByTagName("imagine");
 				var no_of_images = xmlDoc.getElementsByTagName("no")[0].childNodes[0].nodeValue;
-				var container=document.getElementById("galerie");
-				var div, thumbnail, imagine, titlu, descriere;
-					/*if(to>=parseInt(images.length)){
-						to=parseInt(images.length);
-						$("#load_more").prop('disabled', true);
-					}*/
+				let div, imagine, titlu, descriere;
 					for(var i=no_of_images-from;i>-1;i--){
+					
+						let step=no_of_images%3;
+					
+						  if(count==0||(count%3==0)){
+							currentDiv = document.createElement("div");
+							currentDiv.setAttribute("class", "grid_row ");
+							let galerie=document.getElementById("galerie")
+							galerie.appendChild(currentDiv);
+						  }
+					
+						//image container
 						  div = document.createElement('div');
 						  div.className="custom_image_container";
 
-						  thumbnail=document.createElement('div');
-						  thumbnail.className="custom-thumbnail";
-						  div.appendChild(thumbnail);
-						  
-						  /*link=document.createElement('A');
-						  link.setAttribute('href', "./_images/_"+i+".jpg");
-						  link.setAttribute('target', "_blank");
-						  link.className="image_link";
-						  thumbnail.appendChild(link);*/
-						  
+						//image  
 						  imagine = document.createElement("IMG");
 						  imagine.className="custom_image";
 						  imagine.alt="imagine"+"_"+i;
 						  imagine.setAttribute("src", "./_images_thumb/_"+i+".jpg");
-						  imagine.setAttribute("id", i);
-						  
-						  thumbnail.appendChild(imagine);
+						  imagine.setAttribute("id", i);						  
+						  div.appendChild(imagine);
 					  
-						  titlu = document.createElement("h4");
-						  titlu.innerText = images[i].getElementsByTagName("titlu")[0].childNodes[0].nodeValue;
-						 						  
+						  console.log(i);
+					    //title and other descriptors
 						  descriere = document.createElement("p");
 						  descriere.innerText = images[i].getElementsByTagName("descriere")[0].childNodes[0].nodeValue;
 						  imagine.setAttribute("alt", descriere.innerText);
-						  
-						  spanul = document.createElement("span");
-						  spanul.className="short_descr";
-						  spanul.appendChild(titlu);
-						  spanul.appendChild(descriere);
-						  
-						  div.appendChild(spanul);
-						  
-						  document.getElementById("galerie").appendChild(div);
-						  
-						  if(i==0)
-						  {
-							$("#load_more").prop('disabled', true);
-						  }
-						  
-						  
-						  count=count+1;
+
+						//append
+						  currentDiv.appendChild(div);
+						 
+						//custom margins
+  					    if(i%3!=0) div.classList.add("left");
+
+						
+						//load more disable  
+						  if(i==0) $("#load_more").prop('disabled', true);
+						  		
+						  count=count+1;								
 						  if(count==image_step) break;
 					}	
-					setTimeout(function(){
-						$(".short_descr").css("opacity","1");
-						}, 500);
-						$("#load_more_container").css("opacity","1");
+					$("#load_more_container").css("opacity","1");
 			}else if(xhttp.status == 404){
 				div = document.createElement('div');
 				div.innerHTML="Ceva nu e ok aici:(";
